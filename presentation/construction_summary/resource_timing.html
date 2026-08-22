@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locks and Timing Passed</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.slide-container{width:1280px;min-height:720px;background:#06121d;color:#d9f7ff;font-family:Arial,Helvetica,sans-serif;padding:58px 78px 0}
+.kicker{font-size:14px;letter-spacing:3px;color:#28c9ee}
+h1{font-size:45px;line-height:1.08;color:#78edff;margin-top:17px}
+.subtitle{font-size:18px;color:#86b9c8;margin-top:14px;max-width:760px}
+.content{display:flex;gap:70px;margin-top:62px}
+.result{width:31%;border-top:3px solid #54e0a4;padding-top:20px}
+.pass{font-size:62px;letter-spacing:4px;color:#54e0a4;font-weight:700}
+.result p{font-size:17px;line-height:1.4;color:#d9f7ff;margin-top:18px}
+.metric{margin-top:32px;color:#86b9c8;font-size:14px;letter-spacing:1px}
+.metric strong{display:block;color:#78edff;font-size:35px;margin-top:6px}
+.timeline{width:69%;border-top:1px solid #18516b;padding-top:20px}
+.timeline-title{font-size:18px;color:#78edff;letter-spacing:1px}
+.track{display:flex;position:relative;margin-top:48px}
+.track:before{content:"";position:absolute;left:20px;right:20px;top:15px;height:2px;background:#28c9ee}
+.step{width:25%;position:relative;padding-right:20px}
+.dot{width:30px;height:30px;border:2px solid #28c9ee;background:#06121d;position:relative;z-index:1}
+.num{font-size:14px;color:#28c9ee;margin-top:17px;letter-spacing:2px}
+.step h2{font-size:19px;color:#d9f7ff;margin-top:8px;line-height:1.15}
+.step p{font-size:14px;color:#86b9c8;line-height:1.35;margin-top:9px;max-width:150px}
+.footer{margin-top:70px;border-top:1px solid #18516b;padding-top:18px;color:#86b9c8;font-size:14px;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div class="kicker">CONSTRUCTION / INTEGRATION TEST EVIDENCE</div>
+  <h1>Locks and timing passed</h1>
+  <p class="subtitle">The focused test verified exact resource deductions and deterministic queue completion behavior.</p>
+  <div class="content">
+    <section class="result">
+      <div class="pass">PASS</div>
+      <p>Resource balances changed by the exact server-calculated construction cost, with no client-controlled values accepted.</p>
+      <div class="metric">MEASURED BUILD DURATION<strong>240 sec</strong></div>
+    </section>
+    <section class="timeline">
+      <div class="timeline-title">QUEUE VALIDATION SEQUENCE</div>
+      <div class="track">
+        <div class="step"><div class="dot"></div><div class="num">01 / LOCK</div><h2>Resources deducted</h2><p>Metal, Crystal, Deuterium, Naquadah, and Energy matched expected balances.</p></div>
+        <div class="step"><div class="dot"></div><div class="num">02 / QUEUE</div><h2>Work entered building</h2><p>Queue status persisted as <strong>building</strong> for the owned settlement.</p></div>
+        <div class="step"><div class="dot"></div><div class="num">03 / GUARD</div><h2>Early work rejected</h2><p>Processing one second before completion returned zero completed items.</p></div>
+        <div class="step"><div class="dot"></div><div class="num">04 / SETTLE</div><h2>Due work completed</h2><p>Completion persisted the building and audit state after the due time.</p></div>
+      </div>
+    </section>
+  </div>
+  <div class="footer">SOURCE: tests/construction_resource_lock_timing_test.php · TRANSACTIONAL CLEANUP RESTORED FIXTURE STATE</div>
+</div>
+</body>
+</html>

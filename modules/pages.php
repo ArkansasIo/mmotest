@@ -1333,7 +1333,7 @@ function militaryQueueNormalizePriorities(Game $s, int $uid): void {
 }
 
 $main = isset($_GET['id']) ? preg_replace('/[^a-z]/', '', strtolower((string)$_GET['id'])) : 'empire';
-$sub = isset($_GET['atype']) ? preg_replace('/[^a-z]/', '', strtolower((string)$_GET['atype'])) : '';
+$sub = isset($_GET['atype']) ? preg_replace('/[^a-z_-]/', '', strtolower((string)$_GET['atype'])) : '';
 
 $mainTitles = [
     'empire' => 'Empire Command',
@@ -1346,6 +1346,9 @@ $mainTitles = [
     'help' => 'Guides & Help Desk',
     'universe' => 'Universe Observatory',
     'research' => 'Research Directorate',
+    'construction' => 'Construction Directorate',
+    'account' => 'Commander Account',
+    'overview' => 'Overview Command',
 ];
 
 $mainBriefs = [
@@ -1359,6 +1362,9 @@ $mainBriefs = [
     'help' => ['role' => 'Operations Manual', 'brief' => 'Explain the game loop, formulas, protection rules, terminology, commands, and recovery procedures.'],
     'universe' => ['role' => 'Exploration Grid', 'brief' => 'Discover galaxies, planets, moons, stations, lanes, anomalies, expeditions, and seeded universe data.'],
     'research' => ['role' => 'Innovation Directorate', 'brief' => 'Advance technology, talents, stargate systems, laboratories, projects, and blueprint access.'],
+    'construction' => ['role' => 'Build Grid', 'brief' => 'Design, place, upgrade, queue, power, and complete structures across owned planets and moons.'],
+    'account' => ['role' => 'Commander Account', 'brief' => 'Manage commander identity, race doctrine, vacation protection, ascension progression, and account preferences.'],
+    'overview' => ['role' => 'Overview Command', 'brief' => 'Monitor dashboard state, empire overview, active operations, alerts, objectives, and commander controls.'],
 ];
 
 $subDefaults = [
@@ -1372,6 +1378,9 @@ $subDefaults = [
     'help' => 'newplayer',
     'universe' => 'galaxies',
     'research' => 'tree',
+    'construction' => 'construction-buildings',
+    'account' => 'account',
+    'overview' => 'overview-dashboard',
 ];
 
 $subLabels = [
@@ -1385,6 +1394,9 @@ $subLabels = [
     'help' => ['newplayer' => 'New Player', 'mechanics' => 'Mechanics', 'glossary' => 'Glossary', 'support' => 'Support', 'troubleshooting' => 'Troubleshooting', 'hotkeys' => 'Quick Commands'],
     'universe' => ['galaxies' => 'Galaxies', 'planets' => 'Planets & Moons', 'objects' => 'Interstellar Objects', 'expedition' => 'Expedition', 'bases' => 'Stations & Bases', 'travel' => 'Jumpgate & Hyperspace', 'lanes' => 'Transit Lanes', 'anomalies' => 'Anomaly Index', 'seeds' => 'Universe Seeds'],
     'research' => ['tree' => 'Research Tree', 'techlib' => 'Technology Tree', 'infrastructure' => 'Tech Library Buildings', 'classes' => 'Class Library', 'talents' => 'Talent Library', 'stargate' => 'Stargate Tech', 'projects' => 'Projects', 'labs' => 'Lab Network', 'blueprints' => 'Blueprint Systems'],
+    'construction' => ['construction-buildings' => 'Buildings', 'construction-facilities' => 'Facilities', 'construction-queue' => 'Construction Queue', 'shipyard' => 'Shipyard', 'defense' => 'Defense', 'robotics' => 'Robotics', 'nanite-factory' => 'Nanite Factory', 'terraformer' => 'Terraformer', 'space-dock' => 'Space Dock'],
+    'account' => ['account' => 'Account', 'race' => 'Race Selection', 'vacation' => 'Vacation Mode', 'ascension' => 'Ascension', 'progression' => 'Progression'],
+    'overview' => ['overview-dashboard' => 'Dashboard', 'empire-overview' => 'Empire Overview', 'active-operations' => 'Active Operations', 'alerts' => 'Alerts', 'tutorial-objectives' => 'Tutorial / Objectives'],
 ];
 
 // The full registry above keeps every legacy route valid. This smaller map is the visible command rail.
@@ -1399,6 +1411,9 @@ $visibleSubLabels = [
     'help' => ['newplayer' => 'New Player', 'mechanics' => 'Mechanics', 'glossary' => 'Glossary', 'support' => 'Support', 'troubleshooting' => 'Troubleshooting'],
     'universe' => ['galaxies' => 'Galaxies', 'planets' => 'Planets & Moons', 'expedition' => 'Expedition', 'bases' => 'Stations & Bases', 'travel' => 'Jumpgate'],
     'research' => ['tree' => 'Research Tree', 'techlib' => 'Technology', 'classes' => 'Class Library', 'talents' => 'Talents', 'blueprints' => 'Blueprints'],
+    'construction' => ['construction-buildings' => 'Buildings', 'construction-facilities' => 'Facilities', 'construction-queue' => 'Queue', 'shipyard' => 'Shipyard', 'defense' => 'Defense', 'robotics' => 'Robotics', 'nanite-factory' => 'Nanite Factory', 'terraformer' => 'Terraformer', 'space-dock' => 'Space Dock'],
+    'account' => ['account' => 'Account', 'race' => 'Race Selection', 'vacation' => 'Vacation', 'ascension' => 'Ascension', 'progression' => 'Progression'],
+    'overview' => ['overview-dashboard' => 'Dashboard', 'empire-overview' => 'Empire Overview', 'active-operations' => 'Active Operations', 'alerts' => 'Alerts', 'tutorial-objectives' => 'Tutorial / Objectives'],
 ];
 
 $systemDetails = [

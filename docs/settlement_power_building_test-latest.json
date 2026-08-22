@@ -1,0 +1,6 @@
+{
+    "status": "skipped",
+    "reason": "The live seeded settlement has fewer than two empty fields; construction coverage requires two free fields and does not mutate occupied production buildings.",
+    "fields": 21,
+    "empty_fields": 1
+}

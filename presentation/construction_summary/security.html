@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Gates Precede Mutation</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.slide-container{width:1280px;min-height:720px;background:#06121d;color:#d9f7ff;font-family:Arial,Helvetica,sans-serif;padding:58px 78px 0}
+.kicker{color:#28c9ee;font-size:14px;letter-spacing:3px}
+h1{font-size:44px;color:#78edff;margin-top:16px;line-height:1.08}
+.sub{font-size:18px;color:#86b9c8;margin-top:14px;max-width:850px;line-height:1.4}
+.band{margin-top:46px;border-top:1px solid #18516b;padding-top:18px}
+.band-title{font-size:15px;letter-spacing:2px;color:#78edff;margin-bottom:17px}
+.gates{display:flex;align-items:stretch;gap:0}
+.gate{width:13.2%;min-height:116px;border-right:1px solid #18516b;padding:0 16px 0 0;margin-right:16px}
+.gate:last-child{border-right:0;margin-right:0}
+.num{font-size:28px;color:#28c9ee}
+.name{font-size:18px;color:#d9f7ff;margin-top:11px}
+.desc{font-size:13px;line-height:1.35;color:#86b9c8;margin-top:7px}
+.commit{margin-top:40px;border-top:2px solid #28c9ee;padding-top:20px;display:flex;align-items:center;justify-content:space-between}
+.commit-text{max-width:760px}.commit-label{font-size:24px;color:#78edff}.commit-desc{font-size:16px;color:#86b9c8;margin-top:8px;line-height:1.35}
+.commit-mark{width:210px;min-height:82px;border:2px solid #78edff;display:flex;align-items:center;justify-content:center;color:#78edff;font-size:22px;letter-spacing:2px}
+.foot{margin-top:35px;color:#86b9c8;font-size:14px;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div class="kicker">CONSTRUCTION / MUTATION PIPELINE</div>
+  <h1>Security gates precede mutation</h1>
+  <div class="sub">A construction request becomes a durable queue operation only after identity, scope, domain, and transaction checks succeed.</div>
+  <section class="band">
+    <div class="band-title">01 · IDENTITY AND SCOPE</div>
+    <div class="gates">
+      <div class="gate"><div class="num">01</div><div class="name">Auth</div><div class="desc">Current commander session is required.</div></div>
+      <div class="gate"><div class="num">02</div><div class="name">RBAC</div><div class="desc">Construction policy grants the operation.</div></div>
+      <div class="gate"><div class="num">03</div><div class="name">CSRF</div><div class="desc">Mutation carries the canonical token.</div></div>
+      <div class="gate"><div class="num">04</div><div class="name">Ownership</div><div class="desc">Colony and field remain commander-scoped.</div></div>
+    </div>
+  </section>
+  <section class="band" style="margin-top:31px">
+    <div class="band-title">02 · DOMAIN AND STATE</div>
+    <div class="gates">
+      <div class="gate"><div class="num">05</div><div class="name">Cooldown</div><div class="desc">Repeated operations are rejected.</div></div>
+      <div class="gate"><div class="num">06</div><div class="name">Resources</div><div class="desc">Balances are locked and checked.</div></div>
+      <div class="gate"><div class="num">07</div><div class="name">Prereqs</div><div class="desc">Design, technology, and building rules apply.</div></div>
+      <div class="gate"><div class="num">08</div><div class="name">Power</div><div class="desc">Draw and capacity are validated.</div></div>
+    </div>
+  </section>
+  <div class="commit"><div class="commit-text"><div class="commit-label">Transactional commit</div><div class="commit-desc">Queue write, resource deduction, and audit event commit together—or every change rolls back.</div></div><div class="commit-mark">COMMIT / ROLLBACK</div></div>
+  <div class="foot">SERVER-AUTHORITATIVE · PREPARED STATEMENTS · AUDITABLE STATE TRANSITIONS</div>
+</div>
+</body>
+</html>

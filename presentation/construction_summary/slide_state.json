@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "title": "Construction Subsystem",
+    "created": 1787375680.144,
+    "last_updated": 1787375771.84,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "authoritative",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "nine_pages",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "security",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "resource_timing",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "architecture_green",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "next_research",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "next_steps",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Construction Subsystem",
+      "summary": "Contracts, secure queue mechanics, and validation results for Universe Civilization: Empire at Wars.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "authoritative",
+      "title": "Construction Is Server-Authoritative",
+      "summary": "The subsystem resolves design, prerequisites, resources, power, and queue capacity on the server while preserving the canonical route and theme architecture.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "nine_pages",
+      "title": "Nine Pages, One Contract",
+      "summary": "Buildings, Facilities, Queue, Defense, Nanite Factory, Robotics, Shipyard, Space Dock, and Terraformer share a consistent construction model.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "security",
+      "title": "Security Gates Precede Mutation",
+      "summary": "Authentication, RBAC, CSRF, ownership, cooldown, resource, prerequisite, power, and transaction checks protect construction operations.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "resource_timing",
+      "title": "Locks and Timing Passed",
+      "summary": "Focused integration testing verified exact resource deductions, queue status, server completion time, early-processing protection, and due-work completion.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "architecture_green",
+      "title": "Canonical Architecture Stayed Green",
+      "summary": "The unified test suite, 191-route audit, 1,528 route layers, AJAX contracts, syntax, and dependency checks all passed.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "next_research",
+      "title": "Research Is the Next Category",
+      "summary": "Research routes will use a shared contract for technology prerequisites, queue capacity, resources, branch access, and server-derived effects.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "next_steps",
+      "title": "Next Implementation Sequence",
+      "summary": "Normalize Research definitions, wire the shared contract, add focused tests, and preserve the 191-route master registry.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

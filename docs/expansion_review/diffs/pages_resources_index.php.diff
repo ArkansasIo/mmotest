@@ -1,0 +1,21 @@
+--- pages/resources/index.php	2026-08-21 23:53:26.634906331 +0000
++++ expansion_import/pages/resources/index.php	2026-08-22 03:46:50.000000000 +0000
+@@ -1,3 +1,17 @@
+ <?php
+ declare(strict_types=1);
+-$route = 'resources'; $group = 'resources'; $label = 'Resources'; $pageDefinition = is_file('/home/ubuntu/stargatewars/config/page_definitions/resources/resources.php') ? require '/home/ubuntu/stargatewars/config/page_definitions/resources/resources.php' : null; require __DIR__ . '/../_nested_entry.php';
++$title = 'Resources';
++ob_start();
++?>
++<div class="page-title"><h1>Resources</h1><span class="muted">Turn 84</span></div>
++<div class="grid">
++  <section class="panel"><h2>Resources</h2><div class="panel-body">
++    <div class="metric">System Ready</div>
++    <p class="muted">This page is wired to the shared MMO shell and is ready for its domain controller/service.</p>
++  </div></section>
++  <section class="panel"><h2>Activity</h2><div class="panel-body">
++    <p>Next update <b data-countdown="<?= date('c', time()+300) ?>">00:05:00</b></p>
++    <div class="bar"><i style="width:64%"></i></div>
++  </div></section>
++</div>
++<?php $content = ob_get_clean(); require __DIR__ . '/../../includes/layout.php'; ?>
