@@ -1,14 +1,14 @@
 {
-    "generated_at": "2026-08-21T00:27:40+00:00",
-    "groups": 12,
-    "routes": 43,
-    "complete_routes": 43,
+    "generated_at": "2026-08-22T03:06:37+00:00",
+    "groups": 28,
+    "routes": 191,
+    "complete_routes": 191,
     "incomplete_routes": 0,
     "support_files": {
-        "php_pages": 24,
-        "services": 38,
-        "sql_migrations": 41,
-        "tests": 42
+        "php_pages": 56,
+        "services": 51,
+        "sql_migrations": 63,
+        "tests": 95
     },
     "rows": [
         {
@@ -829,6 +829,262 @@
             "complete": true
         },
         {
+            "group": "intelligence",
+            "route": "intelligence-espionage",
+            "title": "Espionage",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/intelligence-espionage.php",
+                "nested_entry": "pages/intelligence/subpages/intelligence-espionage.php",
+                "definition": "config/page_definitions/intelligence/intelligence-espionage.php",
+                "logic": "config/page_logic/intelligence/intelligence-espionage.php",
+                "features": "config/page_features/intelligence/intelligence-espionage.php",
+                "design": "config/page_design_specs/intelligence/intelligence-espionage.php",
+                "systems": "config/page_systems/intelligence/intelligence-espionage.php",
+                "module": "includes/page_modules/intelligence/intelligence-espionage.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "spy-missions",
+            "title": "Spy Missions",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/spy-missions.php",
+                "nested_entry": "pages/intelligence/subpages/spy-missions.php",
+                "definition": "config/page_definitions/intelligence/spy-missions.php",
+                "logic": "config/page_logic/intelligence/spy-missions.php",
+                "features": "config/page_features/intelligence/spy-missions.php",
+                "design": "config/page_design_specs/intelligence/spy-missions.php",
+                "systems": "config/page_systems/intelligence/spy-missions.php",
+                "module": "includes/page_modules/intelligence/spy-missions.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "counter-espionage",
+            "title": "Counter-Espionage",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/counter-espionage.php",
+                "nested_entry": "pages/intelligence/subpages/counter-espionage.php",
+                "definition": "config/page_definitions/intelligence/counter-espionage.php",
+                "logic": "config/page_logic/intelligence/counter-espionage.php",
+                "features": "config/page_features/intelligence/counter-espionage.php",
+                "design": "config/page_design_specs/intelligence/counter-espionage.php",
+                "systems": "config/page_systems/intelligence/counter-espionage.php",
+                "module": "includes/page_modules/intelligence/counter-espionage.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "intelligence-sabotage",
+            "title": "Sabotage",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/intelligence-sabotage.php",
+                "nested_entry": "pages/intelligence/subpages/intelligence-sabotage.php",
+                "definition": "config/page_definitions/intelligence/intelligence-sabotage.php",
+                "logic": "config/page_logic/intelligence/intelligence-sabotage.php",
+                "features": "config/page_features/intelligence/intelligence-sabotage.php",
+                "design": "config/page_design_specs/intelligence/intelligence-sabotage.php",
+                "systems": "config/page_systems/intelligence/intelligence-sabotage.php",
+                "module": "includes/page_modules/intelligence/intelligence-sabotage.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "reconnaissance",
+            "title": "Reconnaissance",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/reconnaissance.php",
+                "nested_entry": "pages/intelligence/subpages/reconnaissance.php",
+                "definition": "config/page_definitions/intelligence/reconnaissance.php",
+                "logic": "config/page_logic/intelligence/reconnaissance.php",
+                "features": "config/page_features/intelligence/reconnaissance.php",
+                "design": "config/page_design_specs/intelligence/reconnaissance.php",
+                "systems": "config/page_systems/intelligence/reconnaissance.php",
+                "module": "includes/page_modules/intelligence/reconnaissance.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "sensor-phalanx",
+            "title": "Sensor Phalanx",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/sensor-phalanx.php",
+                "nested_entry": "pages/intelligence/subpages/sensor-phalanx.php",
+                "definition": "config/page_definitions/intelligence/sensor-phalanx.php",
+                "logic": "config/page_logic/intelligence/sensor-phalanx.php",
+                "features": "config/page_features/intelligence/sensor-phalanx.php",
+                "design": "config/page_design_specs/intelligence/sensor-phalanx.php",
+                "systems": "config/page_systems/intelligence/sensor-phalanx.php",
+                "module": "includes/page_modules/intelligence/sensor-phalanx.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "fleet-activity",
+            "title": "Fleet Activity",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/fleet-activity.php",
+                "nested_entry": "pages/intelligence/subpages/fleet-activity.php",
+                "definition": "config/page_definitions/intelligence/fleet-activity.php",
+                "logic": "config/page_logic/intelligence/fleet-activity.php",
+                "features": "config/page_features/intelligence/fleet-activity.php",
+                "design": "config/page_design_specs/intelligence/fleet-activity.php",
+                "systems": "config/page_systems/intelligence/fleet-activity.php",
+                "module": "includes/page_modules/intelligence/fleet-activity.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "intelligence",
+            "route": "intelligence-reports",
+            "title": "Intelligence Reports",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/intelligence-reports.php",
+                "nested_entry": "pages/intelligence/subpages/intelligence-reports.php",
+                "definition": "config/page_definitions/intelligence/intelligence-reports.php",
+                "logic": "config/page_logic/intelligence/intelligence-reports.php",
+                "features": "config/page_features/intelligence/intelligence-reports.php",
+                "design": "config/page_design_specs/intelligence/intelligence-reports.php",
+                "systems": "config/page_systems/intelligence/intelligence-reports.php",
+                "module": "includes/page_modules/intelligence/intelligence-reports.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
             "group": "market",
             "route": "resource-exchange",
             "title": "Resource Exchange",
@@ -1007,6 +1263,198 @@
             "complete": true
         },
         {
+            "group": "social",
+            "route": "social-messages",
+            "title": "Messages",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/social-messages.php",
+                "nested_entry": "pages/social/subpages/social-messages.php",
+                "definition": "config/page_definitions/social/social-messages.php",
+                "logic": "config/page_logic/social/social-messages.php",
+                "features": "config/page_features/social/social-messages.php",
+                "design": "config/page_design_specs/social/social-messages.php",
+                "systems": "config/page_systems/social/social-messages.php",
+                "module": "includes/page_modules/social/social-messages.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "social",
+            "route": "notifications",
+            "title": "Notifications",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/notifications.php",
+                "nested_entry": "pages/social/subpages/notifications.php",
+                "definition": "config/page_definitions/social/notifications.php",
+                "logic": "config/page_logic/social/notifications.php",
+                "features": "config/page_features/social/notifications.php",
+                "design": "config/page_design_specs/social/notifications.php",
+                "systems": "config/page_systems/social/notifications.php",
+                "module": "includes/page_modules/social/notifications.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "social",
+            "route": "global-chat",
+            "title": "Global Chat",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/global-chat.php",
+                "nested_entry": "pages/social/subpages/global-chat.php",
+                "definition": "config/page_definitions/social/global-chat.php",
+                "logic": "config/page_logic/social/global-chat.php",
+                "features": "config/page_features/social/global-chat.php",
+                "design": "config/page_design_specs/social/global-chat.php",
+                "systems": "config/page_systems/social/global-chat.php",
+                "module": "includes/page_modules/social/global-chat.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "social",
+            "route": "buddy-list",
+            "title": "Buddy List",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/buddy-list.php",
+                "nested_entry": "pages/social/subpages/buddy-list.php",
+                "definition": "config/page_definitions/social/buddy-list.php",
+                "logic": "config/page_logic/social/buddy-list.php",
+                "features": "config/page_features/social/buddy-list.php",
+                "design": "config/page_design_specs/social/buddy-list.php",
+                "systems": "config/page_systems/social/buddy-list.php",
+                "module": "includes/page_modules/social/buddy-list.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "social",
+            "route": "recruitment",
+            "title": "Recruitment",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/recruitment.php",
+                "nested_entry": "pages/social/subpages/recruitment.php",
+                "definition": "config/page_definitions/social/recruitment.php",
+                "logic": "config/page_logic/social/recruitment.php",
+                "features": "config/page_features/social/recruitment.php",
+                "design": "config/page_design_specs/social/recruitment.php",
+                "systems": "config/page_systems/social/recruitment.php",
+                "module": "includes/page_modules/social/recruitment.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "social",
+            "route": "empires-at-war",
+            "title": "Empires at War",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/empires-at-war.php",
+                "nested_entry": "pages/social/subpages/empires-at-war.php",
+                "definition": "config/page_definitions/social/empires-at-war.php",
+                "logic": "config/page_logic/social/empires-at-war.php",
+                "features": "config/page_features/social/empires-at-war.php",
+                "design": "config/page_design_specs/social/empires-at-war.php",
+                "systems": "config/page_systems/social/empires-at-war.php",
+                "module": "includes/page_modules/social/empires-at-war.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
             "group": "planets",
             "route": "planet-list",
             "title": "Planet List",
@@ -1037,6 +1485,48 @@
                 "design": "config/page_design_specs/planets/planet-list.php",
                 "systems": "config/page_systems/planets/planet-list.php",
                 "module": "includes/page_modules/planets/planet-list.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "planets",
+            "route": "settlement",
+            "title": "Settlement & Power Grid",
+            "actions": [
+                "settlement_state",
+                "settlement_build",
+                "settlement_demolish",
+                "settlement_process"
+            ],
+            "tables": [
+                "settlement_fields",
+                "settlement_buildings",
+                "settlement_construction_queues",
+                "building_types",
+                "player_resources",
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/settlement.php",
+                "nested_entry": "pages/planets/subpages/settlement.php",
+                "definition": "config/page_definitions/planets/settlement.php",
+                "logic": "config/page_logic/planets/settlement.php",
+                "features": "config/page_features/planets/settlement.php",
+                "design": "config/page_design_specs/planets/settlement.php",
+                "systems": "config/page_systems/planets/settlement.php",
+                "module": "includes/page_modules/planets/settlement.php"
             },
             "exists": {
                 "root_entry": true,
@@ -1540,6 +2030,4262 @@
                 "design": "config/page_design_specs/universe/coordinates.php",
                 "systems": "config/page_systems/universe/coordinates.php",
                 "module": "includes/page_modules/universe/coordinates.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "overview",
+            "route": "overview-dashboard",
+            "title": "Dashboard",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/overview-dashboard.php",
+                "nested_entry": "pages/overview/subpages/overview-dashboard.php",
+                "definition": "config/page_definitions/overview/overview-dashboard.php",
+                "logic": "config/page_logic/overview/overview-dashboard.php",
+                "features": "config/page_features/overview/overview-dashboard.php",
+                "design": "config/page_design_specs/overview/overview-dashboard.php",
+                "systems": "config/page_systems/overview/overview-dashboard.php",
+                "module": "includes/page_modules/overview/overview-dashboard.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "overview",
+            "route": "empire-overview",
+            "title": "Empire Overview",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/empire-overview.php",
+                "nested_entry": "pages/overview/subpages/empire-overview.php",
+                "definition": "config/page_definitions/overview/empire-overview.php",
+                "logic": "config/page_logic/overview/empire-overview.php",
+                "features": "config/page_features/overview/empire-overview.php",
+                "design": "config/page_design_specs/overview/empire-overview.php",
+                "systems": "config/page_systems/overview/empire-overview.php",
+                "module": "includes/page_modules/overview/empire-overview.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "overview",
+            "route": "active-operations",
+            "title": "Active Operations",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/active-operations.php",
+                "nested_entry": "pages/overview/subpages/active-operations.php",
+                "definition": "config/page_definitions/overview/active-operations.php",
+                "logic": "config/page_logic/overview/active-operations.php",
+                "features": "config/page_features/overview/active-operations.php",
+                "design": "config/page_design_specs/overview/active-operations.php",
+                "systems": "config/page_systems/overview/active-operations.php",
+                "module": "includes/page_modules/overview/active-operations.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "overview",
+            "route": "alerts",
+            "title": "Alerts",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alerts.php",
+                "nested_entry": "pages/overview/subpages/alerts.php",
+                "definition": "config/page_definitions/overview/alerts.php",
+                "logic": "config/page_logic/overview/alerts.php",
+                "features": "config/page_features/overview/alerts.php",
+                "design": "config/page_design_specs/overview/alerts.php",
+                "systems": "config/page_systems/overview/alerts.php",
+                "module": "includes/page_modules/overview/alerts.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "overview",
+            "route": "tutorial-objectives",
+            "title": "Tutorial / Objectives",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/tutorial-objectives.php",
+                "nested_entry": "pages/overview/subpages/tutorial-objectives.php",
+                "definition": "config/page_definitions/overview/tutorial-objectives.php",
+                "logic": "config/page_logic/overview/tutorial-objectives.php",
+                "features": "config/page_features/overview/tutorial-objectives.php",
+                "design": "config/page_design_specs/overview/tutorial-objectives.php",
+                "systems": "config/page_systems/overview/tutorial-objectives.php",
+                "module": "includes/page_modules/overview/tutorial-objectives.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "planets",
+            "title": "Planets",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/planets.php",
+                "nested_entry": "pages/empire/subpages/planets.php",
+                "definition": "config/page_definitions/empire/planets.php",
+                "logic": "config/page_logic/empire/planets.php",
+                "features": "config/page_features/empire/planets.php",
+                "design": "config/page_design_specs/empire/planets.php",
+                "systems": "config/page_systems/empire/planets.php",
+                "module": "includes/page_modules/empire/planets.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "colonies",
+            "title": "Colonies",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/colonies.php",
+                "nested_entry": "pages/empire/subpages/colonies.php",
+                "definition": "config/page_definitions/empire/colonies.php",
+                "logic": "config/page_logic/empire/colonies.php",
+                "features": "config/page_features/empire/colonies.php",
+                "design": "config/page_design_specs/empire/colonies.php",
+                "systems": "config/page_systems/empire/colonies.php",
+                "module": "includes/page_modules/empire/colonies.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "empire-moons",
+            "title": "Moons",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/empire-moons.php",
+                "nested_entry": "pages/empire/subpages/empire-moons.php",
+                "definition": "config/page_definitions/empire/empire-moons.php",
+                "logic": "config/page_logic/empire/empire-moons.php",
+                "features": "config/page_features/empire/empire-moons.php",
+                "design": "config/page_design_specs/empire/empire-moons.php",
+                "systems": "config/page_systems/empire/empire-moons.php",
+                "module": "includes/page_modules/empire/empire-moons.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "buildings",
+            "title": "Buildings",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/buildings.php",
+                "nested_entry": "pages/empire/subpages/buildings.php",
+                "definition": "config/page_definitions/empire/buildings.php",
+                "logic": "config/page_logic/empire/buildings.php",
+                "features": "config/page_features/empire/buildings.php",
+                "design": "config/page_design_specs/empire/buildings.php",
+                "systems": "config/page_systems/empire/buildings.php",
+                "module": "includes/page_modules/empire/buildings.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "facilities",
+            "title": "Facilities",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/facilities.php",
+                "nested_entry": "pages/empire/subpages/facilities.php",
+                "definition": "config/page_definitions/empire/facilities.php",
+                "logic": "config/page_logic/empire/facilities.php",
+                "features": "config/page_features/empire/facilities.php",
+                "design": "config/page_design_specs/empire/facilities.php",
+                "systems": "config/page_systems/empire/facilities.php",
+                "module": "includes/page_modules/empire/facilities.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "storage",
+            "title": "Storage",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/storage.php",
+                "nested_entry": "pages/empire/subpages/storage.php",
+                "definition": "config/page_definitions/empire/storage.php",
+                "logic": "config/page_logic/empire/storage.php",
+                "features": "config/page_features/empire/storage.php",
+                "design": "config/page_design_specs/empire/storage.php",
+                "systems": "config/page_systems/empire/storage.php",
+                "module": "includes/page_modules/empire/storage.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "population",
+            "title": "Population",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/population.php",
+                "nested_entry": "pages/empire/subpages/population.php",
+                "definition": "config/page_definitions/empire/population.php",
+                "logic": "config/page_logic/empire/population.php",
+                "features": "config/page_features/empire/population.php",
+                "design": "config/page_design_specs/empire/population.php",
+                "systems": "config/page_systems/empire/population.php",
+                "module": "includes/page_modules/empire/population.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "empire",
+            "route": "planet-specialization",
+            "title": "Planet Specialization",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/planet-specialization.php",
+                "nested_entry": "pages/empire/subpages/planet-specialization.php",
+                "definition": "config/page_definitions/empire/planet-specialization.php",
+                "logic": "config/page_logic/empire/planet-specialization.php",
+                "features": "config/page_features/empire/planet-specialization.php",
+                "design": "config/page_design_specs/empire/planet-specialization.php",
+                "systems": "config/page_systems/empire/planet-specialization.php",
+                "module": "includes/page_modules/empire/planet-specialization.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "resource-overview",
+            "title": "Resource Overview",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/resource-overview.php",
+                "nested_entry": "pages/resources/subpages/resource-overview.php",
+                "definition": "config/page_definitions/resources/resource-overview.php",
+                "logic": "config/page_logic/resources/resource-overview.php",
+                "features": "config/page_features/resources/resource-overview.php",
+                "design": "config/page_design_specs/resources/resource-overview.php",
+                "systems": "config/page_systems/resources/resource-overview.php",
+                "module": "includes/page_modules/resources/resource-overview.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "metal",
+            "title": "Metal",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/metal.php",
+                "nested_entry": "pages/resources/subpages/metal.php",
+                "definition": "config/page_definitions/resources/metal.php",
+                "logic": "config/page_logic/resources/metal.php",
+                "features": "config/page_features/resources/metal.php",
+                "design": "config/page_design_specs/resources/metal.php",
+                "systems": "config/page_systems/resources/metal.php",
+                "module": "includes/page_modules/resources/metal.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "crystal",
+            "title": "Crystal",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/crystal.php",
+                "nested_entry": "pages/resources/subpages/crystal.php",
+                "definition": "config/page_definitions/resources/crystal.php",
+                "logic": "config/page_logic/resources/crystal.php",
+                "features": "config/page_features/resources/crystal.php",
+                "design": "config/page_design_specs/resources/crystal.php",
+                "systems": "config/page_systems/resources/crystal.php",
+                "module": "includes/page_modules/resources/crystal.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "deuterium",
+            "title": "Deuterium",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/deuterium.php",
+                "nested_entry": "pages/resources/subpages/deuterium.php",
+                "definition": "config/page_definitions/resources/deuterium.php",
+                "logic": "config/page_logic/resources/deuterium.php",
+                "features": "config/page_features/resources/deuterium.php",
+                "design": "config/page_design_specs/resources/deuterium.php",
+                "systems": "config/page_systems/resources/deuterium.php",
+                "module": "includes/page_modules/resources/deuterium.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "naquadah",
+            "title": "Naquadah",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/naquadah.php",
+                "nested_entry": "pages/resources/subpages/naquadah.php",
+                "definition": "config/page_definitions/resources/naquadah.php",
+                "logic": "config/page_logic/resources/naquadah.php",
+                "features": "config/page_features/resources/naquadah.php",
+                "design": "config/page_design_specs/resources/naquadah.php",
+                "systems": "config/page_systems/resources/naquadah.php",
+                "module": "includes/page_modules/resources/naquadah.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "energy",
+            "title": "Energy",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/energy.php",
+                "nested_entry": "pages/resources/subpages/energy.php",
+                "definition": "config/page_definitions/resources/energy.php",
+                "logic": "config/page_logic/resources/energy.php",
+                "features": "config/page_features/resources/energy.php",
+                "design": "config/page_design_specs/resources/energy.php",
+                "systems": "config/page_systems/resources/energy.php",
+                "module": "includes/page_modules/resources/energy.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "dark-matter",
+            "title": "Dark Matter",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/dark-matter.php",
+                "nested_entry": "pages/resources/subpages/dark-matter.php",
+                "definition": "config/page_definitions/resources/dark-matter.php",
+                "logic": "config/page_logic/resources/dark-matter.php",
+                "features": "config/page_features/resources/dark-matter.php",
+                "design": "config/page_design_specs/resources/dark-matter.php",
+                "systems": "config/page_systems/resources/dark-matter.php",
+                "module": "includes/page_modules/resources/dark-matter.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "production",
+            "title": "Production",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/production.php",
+                "nested_entry": "pages/resources/subpages/production.php",
+                "definition": "config/page_definitions/resources/production.php",
+                "logic": "config/page_logic/resources/production.php",
+                "features": "config/page_features/resources/production.php",
+                "design": "config/page_design_specs/resources/production.php",
+                "systems": "config/page_systems/resources/production.php",
+                "module": "includes/page_modules/resources/production.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "resources",
+            "route": "energy-grid",
+            "title": "Energy Grid",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/energy-grid.php",
+                "nested_entry": "pages/resources/subpages/energy-grid.php",
+                "definition": "config/page_definitions/resources/energy-grid.php",
+                "logic": "config/page_logic/resources/energy-grid.php",
+                "features": "config/page_features/resources/energy-grid.php",
+                "design": "config/page_design_specs/resources/energy-grid.php",
+                "systems": "config/page_systems/resources/energy-grid.php",
+                "module": "includes/page_modules/resources/energy-grid.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "construction-buildings",
+            "title": "Buildings",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/construction-buildings.php",
+                "nested_entry": "pages/construction/subpages/construction-buildings.php",
+                "definition": "config/page_definitions/construction/construction-buildings.php",
+                "logic": "config/page_logic/construction/construction-buildings.php",
+                "features": "config/page_features/construction/construction-buildings.php",
+                "design": "config/page_design_specs/construction/construction-buildings.php",
+                "systems": "config/page_systems/construction/construction-buildings.php",
+                "module": "includes/page_modules/construction/construction-buildings.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "construction-facilities",
+            "title": "Facilities",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/construction-facilities.php",
+                "nested_entry": "pages/construction/subpages/construction-facilities.php",
+                "definition": "config/page_definitions/construction/construction-facilities.php",
+                "logic": "config/page_logic/construction/construction-facilities.php",
+                "features": "config/page_features/construction/construction-facilities.php",
+                "design": "config/page_design_specs/construction/construction-facilities.php",
+                "systems": "config/page_systems/construction/construction-facilities.php",
+                "module": "includes/page_modules/construction/construction-facilities.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "construction-queue",
+            "title": "Construction Queue",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/construction-queue.php",
+                "nested_entry": "pages/construction/subpages/construction-queue.php",
+                "definition": "config/page_definitions/construction/construction-queue.php",
+                "logic": "config/page_logic/construction/construction-queue.php",
+                "features": "config/page_features/construction/construction-queue.php",
+                "design": "config/page_design_specs/construction/construction-queue.php",
+                "systems": "config/page_systems/construction/construction-queue.php",
+                "module": "includes/page_modules/construction/construction-queue.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "shipyard",
+            "title": "Shipyard",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/shipyard.php",
+                "nested_entry": "pages/construction/subpages/shipyard.php",
+                "definition": "config/page_definitions/construction/shipyard.php",
+                "logic": "config/page_logic/construction/shipyard.php",
+                "features": "config/page_features/construction/shipyard.php",
+                "design": "config/page_design_specs/construction/shipyard.php",
+                "systems": "config/page_systems/construction/shipyard.php",
+                "module": "includes/page_modules/construction/shipyard.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "defense",
+            "title": "Defense",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/defense.php",
+                "nested_entry": "pages/construction/subpages/defense.php",
+                "definition": "config/page_definitions/construction/defense.php",
+                "logic": "config/page_logic/construction/defense.php",
+                "features": "config/page_features/construction/defense.php",
+                "design": "config/page_design_specs/construction/defense.php",
+                "systems": "config/page_systems/construction/defense.php",
+                "module": "includes/page_modules/construction/defense.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "robotics",
+            "title": "Robotics",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/robotics.php",
+                "nested_entry": "pages/construction/subpages/robotics.php",
+                "definition": "config/page_definitions/construction/robotics.php",
+                "logic": "config/page_logic/construction/robotics.php",
+                "features": "config/page_features/construction/robotics.php",
+                "design": "config/page_design_specs/construction/robotics.php",
+                "systems": "config/page_systems/construction/robotics.php",
+                "module": "includes/page_modules/construction/robotics.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "nanite-factory",
+            "title": "Nanite Factory",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/nanite-factory.php",
+                "nested_entry": "pages/construction/subpages/nanite-factory.php",
+                "definition": "config/page_definitions/construction/nanite-factory.php",
+                "logic": "config/page_logic/construction/nanite-factory.php",
+                "features": "config/page_features/construction/nanite-factory.php",
+                "design": "config/page_design_specs/construction/nanite-factory.php",
+                "systems": "config/page_systems/construction/nanite-factory.php",
+                "module": "includes/page_modules/construction/nanite-factory.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "terraformer",
+            "title": "Terraformer",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/terraformer.php",
+                "nested_entry": "pages/construction/subpages/terraformer.php",
+                "definition": "config/page_definitions/construction/terraformer.php",
+                "logic": "config/page_logic/construction/terraformer.php",
+                "features": "config/page_features/construction/terraformer.php",
+                "design": "config/page_design_specs/construction/terraformer.php",
+                "systems": "config/page_systems/construction/terraformer.php",
+                "module": "includes/page_modules/construction/terraformer.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "construction",
+            "route": "space-dock",
+            "title": "Space Dock",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/space-dock.php",
+                "nested_entry": "pages/construction/subpages/space-dock.php",
+                "definition": "config/page_definitions/construction/space-dock.php",
+                "logic": "config/page_logic/construction/space-dock.php",
+                "features": "config/page_features/construction/space-dock.php",
+                "design": "config/page_design_specs/construction/space-dock.php",
+                "systems": "config/page_systems/construction/space-dock.php",
+                "module": "includes/page_modules/construction/space-dock.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "research-technology",
+            "title": "Technology",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/research-technology.php",
+                "nested_entry": "pages/research/subpages/research-technology.php",
+                "definition": "config/page_definitions/research/research-technology.php",
+                "logic": "config/page_logic/research/research-technology.php",
+                "features": "config/page_features/research/research-technology.php",
+                "design": "config/page_design_specs/research/research-technology.php",
+                "systems": "config/page_systems/research/research-technology.php",
+                "module": "includes/page_modules/research/research-technology.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "advanced-research",
+            "title": "Advanced Research",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/advanced-research.php",
+                "nested_entry": "pages/research/subpages/advanced-research.php",
+                "definition": "config/page_definitions/research/advanced-research.php",
+                "logic": "config/page_logic/research/advanced-research.php",
+                "features": "config/page_features/research/advanced-research.php",
+                "design": "config/page_design_specs/research/advanced-research.php",
+                "systems": "config/page_systems/research/advanced-research.php",
+                "module": "includes/page_modules/research/advanced-research.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "combat",
+            "title": "Combat",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/combat.php",
+                "nested_entry": "pages/research/subpages/combat.php",
+                "definition": "config/page_definitions/research/combat.php",
+                "logic": "config/page_logic/research/combat.php",
+                "features": "config/page_features/research/combat.php",
+                "design": "config/page_design_specs/research/combat.php",
+                "systems": "config/page_systems/research/combat.php",
+                "module": "includes/page_modules/research/combat.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "propulsion",
+            "title": "Propulsion",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/propulsion.php",
+                "nested_entry": "pages/research/subpages/propulsion.php",
+                "definition": "config/page_definitions/research/propulsion.php",
+                "logic": "config/page_logic/research/propulsion.php",
+                "features": "config/page_features/research/propulsion.php",
+                "design": "config/page_design_specs/research/propulsion.php",
+                "systems": "config/page_systems/research/propulsion.php",
+                "module": "includes/page_modules/research/propulsion.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "espionage",
+            "title": "Espionage",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/espionage.php",
+                "nested_entry": "pages/research/subpages/espionage.php",
+                "definition": "config/page_definitions/research/espionage.php",
+                "logic": "config/page_logic/research/espionage.php",
+                "features": "config/page_features/research/espionage.php",
+                "design": "config/page_design_specs/research/espionage.php",
+                "systems": "config/page_systems/research/espionage.php",
+                "module": "includes/page_modules/research/espionage.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "astrophysics",
+            "title": "Astrophysics",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/astrophysics.php",
+                "nested_entry": "pages/research/subpages/astrophysics.php",
+                "definition": "config/page_definitions/research/astrophysics.php",
+                "logic": "config/page_logic/research/astrophysics.php",
+                "features": "config/page_features/research/astrophysics.php",
+                "design": "config/page_design_specs/research/astrophysics.php",
+                "systems": "config/page_systems/research/astrophysics.php",
+                "module": "includes/page_modules/research/astrophysics.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "stargate-technology",
+            "title": "Stargate Technology",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/stargate-technology.php",
+                "nested_entry": "pages/research/subpages/stargate-technology.php",
+                "definition": "config/page_definitions/research/stargate-technology.php",
+                "logic": "config/page_logic/research/stargate-technology.php",
+                "features": "config/page_features/research/stargate-technology.php",
+                "design": "config/page_design_specs/research/stargate-technology.php",
+                "systems": "config/page_systems/research/stargate-technology.php",
+                "module": "includes/page_modules/research/stargate-technology.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "mothership-technology",
+            "title": "Mothership Technology",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/mothership-technology.php",
+                "nested_entry": "pages/research/subpages/mothership-technology.php",
+                "definition": "config/page_definitions/research/mothership-technology.php",
+                "logic": "config/page_logic/research/mothership-technology.php",
+                "features": "config/page_features/research/mothership-technology.php",
+                "design": "config/page_design_specs/research/mothership-technology.php",
+                "systems": "config/page_systems/research/mothership-technology.php",
+                "module": "includes/page_modules/research/mothership-technology.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "lifeform-research",
+            "title": "Lifeform Research",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/lifeform-research.php",
+                "nested_entry": "pages/research/subpages/lifeform-research.php",
+                "definition": "config/page_definitions/research/lifeform-research.php",
+                "logic": "config/page_logic/research/lifeform-research.php",
+                "features": "config/page_features/research/lifeform-research.php",
+                "design": "config/page_design_specs/research/lifeform-research.php",
+                "systems": "config/page_systems/research/lifeform-research.php",
+                "module": "includes/page_modules/research/lifeform-research.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "research",
+            "route": "ascension-research",
+            "title": "Ascension Research",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/ascension-research.php",
+                "nested_entry": "pages/research/subpages/ascension-research.php",
+                "definition": "config/page_definitions/research/ascension-research.php",
+                "logic": "config/page_logic/research/ascension-research.php",
+                "features": "config/page_features/research/ascension-research.php",
+                "design": "config/page_design_specs/research/ascension-research.php",
+                "systems": "config/page_systems/research/ascension-research.php",
+                "module": "includes/page_modules/research/ascension-research.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "fleet-manager",
+            "title": "Fleet Manager",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/fleet-manager.php",
+                "nested_entry": "pages/fleet/subpages/fleet-manager.php",
+                "definition": "config/page_definitions/fleet/fleet-manager.php",
+                "logic": "config/page_logic/fleet/fleet-manager.php",
+                "features": "config/page_features/fleet/fleet-manager.php",
+                "design": "config/page_design_specs/fleet/fleet-manager.php",
+                "systems": "config/page_systems/fleet/fleet-manager.php",
+                "module": "includes/page_modules/fleet/fleet-manager.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "starships",
+            "title": "Starships",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/starships.php",
+                "nested_entry": "pages/fleet/subpages/starships.php",
+                "definition": "config/page_definitions/fleet/starships.php",
+                "logic": "config/page_logic/fleet/starships.php",
+                "features": "config/page_features/fleet/starships.php",
+                "design": "config/page_design_specs/fleet/starships.php",
+                "systems": "config/page_systems/fleet/starships.php",
+                "module": "includes/page_modules/fleet/starships.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "motherships",
+            "title": "Motherships",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/motherships.php",
+                "nested_entry": "pages/fleet/subpages/motherships.php",
+                "definition": "config/page_definitions/fleet/motherships.php",
+                "logic": "config/page_logic/fleet/motherships.php",
+                "features": "config/page_features/fleet/motherships.php",
+                "design": "config/page_design_specs/fleet/motherships.php",
+                "systems": "config/page_systems/fleet/motherships.php",
+                "module": "includes/page_modules/fleet/motherships.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "ship-upgrades",
+            "title": "Ship Upgrades",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/ship-upgrades.php",
+                "nested_entry": "pages/fleet/subpages/ship-upgrades.php",
+                "definition": "config/page_definitions/fleet/ship-upgrades.php",
+                "logic": "config/page_logic/fleet/ship-upgrades.php",
+                "features": "config/page_features/fleet/ship-upgrades.php",
+                "design": "config/page_design_specs/fleet/ship-upgrades.php",
+                "systems": "config/page_systems/fleet/ship-upgrades.php",
+                "module": "includes/page_modules/fleet/ship-upgrades.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "formations",
+            "title": "Formations",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/formations.php",
+                "nested_entry": "pages/fleet/subpages/formations.php",
+                "definition": "config/page_definitions/fleet/formations.php",
+                "logic": "config/page_logic/fleet/formations.php",
+                "features": "config/page_features/fleet/formations.php",
+                "design": "config/page_design_specs/fleet/formations.php",
+                "systems": "config/page_systems/fleet/formations.php",
+                "module": "includes/page_modules/fleet/formations.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "fleet-missions",
+            "title": "Fleet Missions",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/fleet-missions.php",
+                "nested_entry": "pages/fleet/subpages/fleet-missions.php",
+                "definition": "config/page_definitions/fleet/fleet-missions.php",
+                "logic": "config/page_logic/fleet/fleet-missions.php",
+                "features": "config/page_features/fleet/fleet-missions.php",
+                "design": "config/page_design_specs/fleet/fleet-missions.php",
+                "systems": "config/page_systems/fleet/fleet-missions.php",
+                "module": "includes/page_modules/fleet/fleet-missions.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "expeditions",
+            "title": "Expeditions",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/expeditions.php",
+                "nested_entry": "pages/fleet/subpages/expeditions.php",
+                "definition": "config/page_definitions/fleet/expeditions.php",
+                "logic": "config/page_logic/fleet/expeditions.php",
+                "features": "config/page_features/fleet/expeditions.php",
+                "design": "config/page_design_specs/fleet/expeditions.php",
+                "systems": "config/page_systems/fleet/expeditions.php",
+                "module": "includes/page_modules/fleet/expeditions.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "fleet-save",
+            "title": "Fleet Save",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/fleet-save.php",
+                "nested_entry": "pages/fleet/subpages/fleet-save.php",
+                "definition": "config/page_definitions/fleet/fleet-save.php",
+                "logic": "config/page_logic/fleet/fleet-save.php",
+                "features": "config/page_features/fleet/fleet-save.php",
+                "design": "config/page_design_specs/fleet/fleet-save.php",
+                "systems": "config/page_systems/fleet/fleet-save.php",
+                "module": "includes/page_modules/fleet/fleet-save.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "fleet",
+            "route": "acs",
+            "title": "ACS",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/acs.php",
+                "nested_entry": "pages/fleet/subpages/acs.php",
+                "definition": "config/page_definitions/fleet/acs.php",
+                "logic": "config/page_logic/fleet/acs.php",
+                "features": "config/page_features/fleet/acs.php",
+                "design": "config/page_design_specs/fleet/acs.php",
+                "systems": "config/page_systems/fleet/acs.php",
+                "module": "includes/page_modules/fleet/acs.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "ground-forces",
+            "title": "Ground Forces",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/ground-forces.php",
+                "nested_entry": "pages/military/subpages/ground-forces.php",
+                "definition": "config/page_definitions/military/ground-forces.php",
+                "logic": "config/page_logic/military/ground-forces.php",
+                "features": "config/page_features/military/ground-forces.php",
+                "design": "config/page_design_specs/military/ground-forces.php",
+                "systems": "config/page_systems/military/ground-forces.php",
+                "module": "includes/page_modules/military/ground-forces.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "military-units",
+            "title": "Units",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/military-units.php",
+                "nested_entry": "pages/military/subpages/military-units.php",
+                "definition": "config/page_definitions/military/military-units.php",
+                "logic": "config/page_logic/military/military-units.php",
+                "features": "config/page_features/military/military-units.php",
+                "design": "config/page_design_specs/military/military-units.php",
+                "systems": "config/page_systems/military/military-units.php",
+                "module": "includes/page_modules/military/military-units.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "officers",
+            "title": "Officers",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/officers.php",
+                "nested_entry": "pages/military/subpages/officers.php",
+                "definition": "config/page_definitions/military/officers.php",
+                "logic": "config/page_logic/military/officers.php",
+                "features": "config/page_features/military/officers.php",
+                "design": "config/page_design_specs/military/officers.php",
+                "systems": "config/page_systems/military/officers.php",
+                "module": "includes/page_modules/military/officers.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "training-center",
+            "title": "Training Center",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/training-center.php",
+                "nested_entry": "pages/military/subpages/training-center.php",
+                "definition": "config/page_definitions/military/training-center.php",
+                "logic": "config/page_logic/military/training-center.php",
+                "features": "config/page_features/military/training-center.php",
+                "design": "config/page_design_specs/military/training-center.php",
+                "systems": "config/page_systems/military/training-center.php",
+                "module": "includes/page_modules/military/training-center.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "planetary-defense",
+            "title": "Planetary Defense",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/planetary-defense.php",
+                "nested_entry": "pages/military/subpages/planetary-defense.php",
+                "definition": "config/page_definitions/military/planetary-defense.php",
+                "logic": "config/page_logic/military/planetary-defense.php",
+                "features": "config/page_features/military/planetary-defense.php",
+                "design": "config/page_design_specs/military/planetary-defense.php",
+                "systems": "config/page_systems/military/planetary-defense.php",
+                "module": "includes/page_modules/military/planetary-defense.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "missile-warfare",
+            "title": "Missile Warfare",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/missile-warfare.php",
+                "nested_entry": "pages/military/subpages/missile-warfare.php",
+                "definition": "config/page_definitions/military/missile-warfare.php",
+                "logic": "config/page_logic/military/missile-warfare.php",
+                "features": "config/page_features/military/missile-warfare.php",
+                "design": "config/page_design_specs/military/missile-warfare.php",
+                "systems": "config/page_systems/military/missile-warfare.php",
+                "module": "includes/page_modules/military/missile-warfare.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "combat-simulator",
+            "title": "Combat Simulator",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/combat-simulator.php",
+                "nested_entry": "pages/military/subpages/combat-simulator.php",
+                "definition": "config/page_definitions/military/combat-simulator.php",
+                "logic": "config/page_logic/military/combat-simulator.php",
+                "features": "config/page_features/military/combat-simulator.php",
+                "design": "config/page_design_specs/military/combat-simulator.php",
+                "systems": "config/page_systems/military/combat-simulator.php",
+                "module": "includes/page_modules/military/combat-simulator.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "war-room",
+            "title": "War Room",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/war-room.php",
+                "nested_entry": "pages/military/subpages/war-room.php",
+                "definition": "config/page_definitions/military/war-room.php",
+                "logic": "config/page_logic/military/war-room.php",
+                "features": "config/page_features/military/war-room.php",
+                "design": "config/page_design_specs/military/war-room.php",
+                "systems": "config/page_systems/military/war-room.php",
+                "module": "includes/page_modules/military/war-room.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "military",
+            "route": "campaigns",
+            "title": "Campaigns",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/campaigns.php",
+                "nested_entry": "pages/military/subpages/campaigns.php",
+                "definition": "config/page_definitions/military/campaigns.php",
+                "logic": "config/page_logic/military/campaigns.php",
+                "features": "config/page_features/military/campaigns.php",
+                "design": "config/page_design_specs/military/campaigns.php",
+                "systems": "config/page_systems/military/campaigns.php",
+                "module": "includes/page_modules/military/campaigns.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "galaxy-view",
+            "title": "Galaxy View",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/galaxy-view.php",
+                "nested_entry": "pages/galaxy/subpages/galaxy-view.php",
+                "definition": "config/page_definitions/galaxy/galaxy-view.php",
+                "logic": "config/page_logic/galaxy/galaxy-view.php",
+                "features": "config/page_features/galaxy/galaxy-view.php",
+                "design": "config/page_design_specs/galaxy/galaxy-view.php",
+                "systems": "config/page_systems/galaxy/galaxy-view.php",
+                "module": "includes/page_modules/galaxy/galaxy-view.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "galaxy-map",
+            "title": "Galaxy Map",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/galaxy-map.php",
+                "nested_entry": "pages/galaxy/subpages/galaxy-map.php",
+                "definition": "config/page_definitions/galaxy/galaxy-map.php",
+                "logic": "config/page_logic/galaxy/galaxy-map.php",
+                "features": "config/page_features/galaxy/galaxy-map.php",
+                "design": "config/page_design_specs/galaxy/galaxy-map.php",
+                "systems": "config/page_systems/galaxy/galaxy-map.php",
+                "module": "includes/page_modules/galaxy/galaxy-map.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "galaxy-solar-systems",
+            "title": "Solar Systems",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/galaxy-solar-systems.php",
+                "nested_entry": "pages/galaxy/subpages/galaxy-solar-systems.php",
+                "definition": "config/page_definitions/galaxy/galaxy-solar-systems.php",
+                "logic": "config/page_logic/galaxy/galaxy-solar-systems.php",
+                "features": "config/page_features/galaxy/galaxy-solar-systems.php",
+                "design": "config/page_design_specs/galaxy/galaxy-solar-systems.php",
+                "systems": "config/page_systems/galaxy/galaxy-solar-systems.php",
+                "module": "includes/page_modules/galaxy/galaxy-solar-systems.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "3d-universe",
+            "title": "3D Universe",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/3d-universe.php",
+                "nested_entry": "pages/galaxy/subpages/3d-universe.php",
+                "definition": "config/page_definitions/galaxy/3d-universe.php",
+                "logic": "config/page_logic/galaxy/3d-universe.php",
+                "features": "config/page_features/galaxy/3d-universe.php",
+                "design": "config/page_design_specs/galaxy/3d-universe.php",
+                "systems": "config/page_systems/galaxy/3d-universe.php",
+                "module": "includes/page_modules/galaxy/3d-universe.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "galaxy-sectors",
+            "title": "Sectors",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/galaxy-sectors.php",
+                "nested_entry": "pages/galaxy/subpages/galaxy-sectors.php",
+                "definition": "config/page_definitions/galaxy/galaxy-sectors.php",
+                "logic": "config/page_logic/galaxy/galaxy-sectors.php",
+                "features": "config/page_features/galaxy/galaxy-sectors.php",
+                "design": "config/page_design_specs/galaxy/galaxy-sectors.php",
+                "systems": "config/page_systems/galaxy/galaxy-sectors.php",
+                "module": "includes/page_modules/galaxy/galaxy-sectors.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "realm-systems",
+            "title": "Realm Systems",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/realm-systems.php",
+                "nested_entry": "pages/galaxy/subpages/realm-systems.php",
+                "definition": "config/page_definitions/galaxy/realm-systems.php",
+                "logic": "config/page_logic/galaxy/realm-systems.php",
+                "features": "config/page_features/galaxy/realm-systems.php",
+                "design": "config/page_design_specs/galaxy/realm-systems.php",
+                "systems": "config/page_systems/galaxy/realm-systems.php",
+                "module": "includes/page_modules/galaxy/realm-systems.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "stargate-network",
+            "title": "Stargate Network",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/stargate-network.php",
+                "nested_entry": "pages/galaxy/subpages/stargate-network.php",
+                "definition": "config/page_definitions/galaxy/stargate-network.php",
+                "logic": "config/page_logic/galaxy/stargate-network.php",
+                "features": "config/page_features/galaxy/stargate-network.php",
+                "design": "config/page_design_specs/galaxy/stargate-network.php",
+                "systems": "config/page_systems/galaxy/stargate-network.php",
+                "module": "includes/page_modules/galaxy/stargate-network.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "wormholes",
+            "title": "Wormholes",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/wormholes.php",
+                "nested_entry": "pages/galaxy/subpages/wormholes.php",
+                "definition": "config/page_definitions/galaxy/wormholes.php",
+                "logic": "config/page_logic/galaxy/wormholes.php",
+                "features": "config/page_features/galaxy/wormholes.php",
+                "design": "config/page_design_specs/galaxy/wormholes.php",
+                "systems": "config/page_systems/galaxy/wormholes.php",
+                "module": "includes/page_modules/galaxy/wormholes.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "anomalies",
+            "title": "Anomalies",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/anomalies.php",
+                "nested_entry": "pages/galaxy/subpages/anomalies.php",
+                "definition": "config/page_definitions/galaxy/anomalies.php",
+                "logic": "config/page_logic/galaxy/anomalies.php",
+                "features": "config/page_features/galaxy/anomalies.php",
+                "design": "config/page_design_specs/galaxy/anomalies.php",
+                "systems": "config/page_systems/galaxy/anomalies.php",
+                "module": "includes/page_modules/galaxy/anomalies.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "npc-factions",
+            "title": "NPC Factions",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/npc-factions.php",
+                "nested_entry": "pages/galaxy/subpages/npc-factions.php",
+                "definition": "config/page_definitions/galaxy/npc-factions.php",
+                "logic": "config/page_logic/galaxy/npc-factions.php",
+                "features": "config/page_features/galaxy/npc-factions.php",
+                "design": "config/page_design_specs/galaxy/npc-factions.php",
+                "systems": "config/page_systems/galaxy/npc-factions.php",
+                "module": "includes/page_modules/galaxy/npc-factions.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "seed-discovery",
+            "title": "Seed Discovery",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/seed-discovery.php",
+                "nested_entry": "pages/galaxy/subpages/seed-discovery.php",
+                "definition": "config/page_definitions/galaxy/seed-discovery.php",
+                "logic": "config/page_logic/galaxy/seed-discovery.php",
+                "features": "config/page_features/galaxy/seed-discovery.php",
+                "design": "config/page_design_specs/galaxy/seed-discovery.php",
+                "systems": "config/page_systems/galaxy/seed-discovery.php",
+                "module": "includes/page_modules/galaxy/seed-discovery.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "galaxy",
+            "route": "galactic-calendar",
+            "title": "Galactic Calendar",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/galactic-calendar.php",
+                "nested_entry": "pages/galaxy/subpages/galactic-calendar.php",
+                "definition": "config/page_definitions/galaxy/galactic-calendar.php",
+                "logic": "config/page_logic/galaxy/galactic-calendar.php",
+                "features": "config/page_features/galaxy/galactic-calendar.php",
+                "design": "config/page_design_specs/galaxy/galactic-calendar.php",
+                "systems": "config/page_systems/galaxy/galactic-calendar.php",
+                "module": "includes/page_modules/galaxy/galactic-calendar.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "marketplace",
+            "title": "Marketplace",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/marketplace.php",
+                "nested_entry": "pages/economy/subpages/marketplace.php",
+                "definition": "config/page_definitions/economy/marketplace.php",
+                "logic": "config/page_logic/economy/marketplace.php",
+                "features": "config/page_features/economy/marketplace.php",
+                "design": "config/page_design_specs/economy/marketplace.php",
+                "systems": "config/page_systems/economy/marketplace.php",
+                "module": "includes/page_modules/economy/marketplace.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "resource-trading",
+            "title": "Resource Trading",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/resource-trading.php",
+                "nested_entry": "pages/economy/subpages/resource-trading.php",
+                "definition": "config/page_definitions/economy/resource-trading.php",
+                "logic": "config/page_logic/economy/resource-trading.php",
+                "features": "config/page_features/economy/resource-trading.php",
+                "design": "config/page_design_specs/economy/resource-trading.php",
+                "systems": "config/page_systems/economy/resource-trading.php",
+                "module": "includes/page_modules/economy/resource-trading.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "trade-routes",
+            "title": "Trade Routes",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/trade-routes.php",
+                "nested_entry": "pages/economy/subpages/trade-routes.php",
+                "definition": "config/page_definitions/economy/trade-routes.php",
+                "logic": "config/page_logic/economy/trade-routes.php",
+                "features": "config/page_features/economy/trade-routes.php",
+                "design": "config/page_design_specs/economy/trade-routes.php",
+                "systems": "config/page_systems/economy/trade-routes.php",
+                "module": "includes/page_modules/economy/trade-routes.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "merchant",
+            "title": "Merchant",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/merchant.php",
+                "nested_entry": "pages/economy/subpages/merchant.php",
+                "definition": "config/page_definitions/economy/merchant.php",
+                "logic": "config/page_logic/economy/merchant.php",
+                "features": "config/page_features/economy/merchant.php",
+                "design": "config/page_design_specs/economy/merchant.php",
+                "systems": "config/page_systems/economy/merchant.php",
+                "module": "includes/page_modules/economy/merchant.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "auction-house",
+            "title": "Auction House",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/auction-house.php",
+                "nested_entry": "pages/economy/subpages/auction-house.php",
+                "definition": "config/page_definitions/economy/auction-house.php",
+                "logic": "config/page_logic/economy/auction-house.php",
+                "features": "config/page_features/economy/auction-house.php",
+                "design": "config/page_design_specs/economy/auction-house.php",
+                "systems": "config/page_systems/economy/auction-house.php",
+                "module": "includes/page_modules/economy/auction-house.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "black-market",
+            "title": "Black Market",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/black-market.php",
+                "nested_entry": "pages/economy/subpages/black-market.php",
+                "definition": "config/page_definitions/economy/black-market.php",
+                "logic": "config/page_logic/economy/black-market.php",
+                "features": "config/page_features/economy/black-market.php",
+                "design": "config/page_design_specs/economy/black-market.php",
+                "systems": "config/page_systems/economy/black-market.php",
+                "module": "includes/page_modules/economy/black-market.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "economy",
+            "route": "insurance",
+            "title": "Insurance",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/insurance.php",
+                "nested_entry": "pages/economy/subpages/insurance.php",
+                "definition": "config/page_definitions/economy/insurance.php",
+                "logic": "config/page_logic/economy/insurance.php",
+                "features": "config/page_features/economy/insurance.php",
+                "design": "config/page_design_specs/economy/insurance.php",
+                "systems": "config/page_systems/economy/insurance.php",
+                "module": "includes/page_modules/economy/insurance.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "workshop",
+            "title": "Workshop",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/workshop.php",
+                "nested_entry": "pages/crafting/subpages/workshop.php",
+                "definition": "config/page_definitions/crafting/workshop.php",
+                "logic": "config/page_logic/crafting/workshop.php",
+                "features": "config/page_features/crafting/workshop.php",
+                "design": "config/page_design_specs/crafting/workshop.php",
+                "systems": "config/page_systems/crafting/workshop.php",
+                "module": "includes/page_modules/crafting/workshop.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "master-crafting",
+            "title": "Master Crafting",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/master-crafting.php",
+                "nested_entry": "pages/crafting/subpages/master-crafting.php",
+                "definition": "config/page_definitions/crafting/master-crafting.php",
+                "logic": "config/page_logic/crafting/master-crafting.php",
+                "features": "config/page_features/crafting/master-crafting.php",
+                "design": "config/page_design_specs/crafting/master-crafting.php",
+                "systems": "config/page_systems/crafting/master-crafting.php",
+                "module": "includes/page_modules/crafting/master-crafting.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "crafting-rank",
+            "title": "Crafting Rank",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/crafting-rank.php",
+                "nested_entry": "pages/crafting/subpages/crafting-rank.php",
+                "definition": "config/page_definitions/crafting/crafting-rank.php",
+                "logic": "config/page_logic/crafting/crafting-rank.php",
+                "features": "config/page_features/crafting/crafting-rank.php",
+                "design": "config/page_design_specs/crafting/crafting-rank.php",
+                "systems": "config/page_systems/crafting/crafting-rank.php",
+                "module": "includes/page_modules/crafting/crafting-rank.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "materials",
+            "title": "Materials",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/materials.php",
+                "nested_entry": "pages/crafting/subpages/materials.php",
+                "definition": "config/page_definitions/crafting/materials.php",
+                "logic": "config/page_logic/crafting/materials.php",
+                "features": "config/page_features/crafting/materials.php",
+                "design": "config/page_design_specs/crafting/materials.php",
+                "systems": "config/page_systems/crafting/materials.php",
+                "module": "includes/page_modules/crafting/materials.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "materials-lab",
+            "title": "Materials Lab",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/materials-lab.php",
+                "nested_entry": "pages/crafting/subpages/materials-lab.php",
+                "definition": "config/page_definitions/crafting/materials-lab.php",
+                "logic": "config/page_logic/crafting/materials-lab.php",
+                "features": "config/page_features/crafting/materials-lab.php",
+                "design": "config/page_design_specs/crafting/materials-lab.php",
+                "systems": "config/page_systems/crafting/materials-lab.php",
+                "module": "includes/page_modules/crafting/materials-lab.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "dismantling",
+            "title": "Dismantling",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/dismantling.php",
+                "nested_entry": "pages/crafting/subpages/dismantling.php",
+                "definition": "config/page_definitions/crafting/dismantling.php",
+                "logic": "config/page_logic/crafting/dismantling.php",
+                "features": "config/page_features/crafting/dismantling.php",
+                "design": "config/page_design_specs/crafting/dismantling.php",
+                "systems": "config/page_systems/crafting/dismantling.php",
+                "module": "includes/page_modules/crafting/dismantling.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "augmentations",
+            "title": "Augmentations",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/augmentations.php",
+                "nested_entry": "pages/crafting/subpages/augmentations.php",
+                "definition": "config/page_definitions/crafting/augmentations.php",
+                "logic": "config/page_logic/crafting/augmentations.php",
+                "features": "config/page_features/crafting/augmentations.php",
+                "design": "config/page_design_specs/crafting/augmentations.php",
+                "systems": "config/page_systems/crafting/augmentations.php",
+                "module": "includes/page_modules/crafting/augmentations.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "artifacts",
+            "title": "Artifacts",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/artifacts.php",
+                "nested_entry": "pages/crafting/subpages/artifacts.php",
+                "definition": "config/page_definitions/crafting/artifacts.php",
+                "logic": "config/page_logic/crafting/artifacts.php",
+                "features": "config/page_features/crafting/artifacts.php",
+                "design": "config/page_design_specs/crafting/artifacts.php",
+                "systems": "config/page_systems/crafting/artifacts.php",
+                "module": "includes/page_modules/crafting/artifacts.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "crafting",
+            "route": "blueprints",
+            "title": "Blueprints",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/blueprints.php",
+                "nested_entry": "pages/crafting/subpages/blueprints.php",
+                "definition": "config/page_definitions/crafting/blueprints.php",
+                "logic": "config/page_logic/crafting/blueprints.php",
+                "features": "config/page_features/crafting/blueprints.php",
+                "design": "config/page_design_specs/crafting/blueprints.php",
+                "systems": "config/page_systems/crafting/blueprints.php",
+                "module": "includes/page_modules/crafting/blueprints.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "alliance-hub",
+            "title": "Alliance Hub",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance-hub.php",
+                "nested_entry": "pages/alliance/subpages/alliance-hub.php",
+                "definition": "config/page_definitions/alliance/alliance-hub.php",
+                "logic": "config/page_logic/alliance/alliance-hub.php",
+                "features": "config/page_features/alliance/alliance-hub.php",
+                "design": "config/page_design_specs/alliance/alliance-hub.php",
+                "systems": "config/page_systems/alliance/alliance-hub.php",
+                "module": "includes/page_modules/alliance/alliance-hub.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "members",
+            "title": "Members",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/members.php",
+                "nested_entry": "pages/alliance/subpages/members.php",
+                "definition": "config/page_definitions/alliance/members.php",
+                "logic": "config/page_logic/alliance/members.php",
+                "features": "config/page_features/alliance/members.php",
+                "design": "config/page_design_specs/alliance/members.php",
+                "systems": "config/page_systems/alliance/members.php",
+                "module": "includes/page_modules/alliance/members.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "commanders",
+            "title": "Commanders",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/commanders.php",
+                "nested_entry": "pages/alliance/subpages/commanders.php",
+                "definition": "config/page_definitions/alliance/commanders.php",
+                "logic": "config/page_logic/alliance/commanders.php",
+                "features": "config/page_features/alliance/commanders.php",
+                "design": "config/page_design_specs/alliance/commanders.php",
+                "systems": "config/page_systems/alliance/commanders.php",
+                "module": "includes/page_modules/alliance/commanders.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "alliance-officers",
+            "title": "Officers",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance-officers.php",
+                "nested_entry": "pages/alliance/subpages/alliance-officers.php",
+                "definition": "config/page_definitions/alliance/alliance-officers.php",
+                "logic": "config/page_logic/alliance/alliance-officers.php",
+                "features": "config/page_features/alliance/alliance-officers.php",
+                "design": "config/page_design_specs/alliance/alliance-officers.php",
+                "systems": "config/page_systems/alliance/alliance-officers.php",
+                "module": "includes/page_modules/alliance/alliance-officers.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "diplomacy",
+            "title": "Diplomacy",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/diplomacy.php",
+                "nested_entry": "pages/alliance/subpages/diplomacy.php",
+                "definition": "config/page_definitions/alliance/diplomacy.php",
+                "logic": "config/page_logic/alliance/diplomacy.php",
+                "features": "config/page_features/alliance/diplomacy.php",
+                "design": "config/page_design_specs/alliance/diplomacy.php",
+                "systems": "config/page_systems/alliance/diplomacy.php",
+                "module": "includes/page_modules/alliance/diplomacy.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "war",
+            "title": "War",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/war.php",
+                "nested_entry": "pages/alliance/subpages/war.php",
+                "definition": "config/page_definitions/alliance/war.php",
+                "logic": "config/page_logic/alliance/war.php",
+                "features": "config/page_features/alliance/war.php",
+                "design": "config/page_design_specs/alliance/war.php",
+                "systems": "config/page_systems/alliance/war.php",
+                "module": "includes/page_modules/alliance/war.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "alliance-acs",
+            "title": "ACS",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance-acs.php",
+                "nested_entry": "pages/alliance/subpages/alliance-acs.php",
+                "definition": "config/page_definitions/alliance/alliance-acs.php",
+                "logic": "config/page_logic/alliance/alliance-acs.php",
+                "features": "config/page_features/alliance/alliance-acs.php",
+                "design": "config/page_design_specs/alliance/alliance-acs.php",
+                "systems": "config/page_systems/alliance/alliance-acs.php",
+                "module": "includes/page_modules/alliance/alliance-acs.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "alliance-logistics",
+            "title": "Alliance Logistics",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance-logistics.php",
+                "nested_entry": "pages/alliance/subpages/alliance-logistics.php",
+                "definition": "config/page_definitions/alliance/alliance-logistics.php",
+                "logic": "config/page_logic/alliance/alliance-logistics.php",
+                "features": "config/page_features/alliance/alliance-logistics.php",
+                "design": "config/page_design_specs/alliance/alliance-logistics.php",
+                "systems": "config/page_systems/alliance/alliance-logistics.php",
+                "module": "includes/page_modules/alliance/alliance-logistics.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "alliance-stargates",
+            "title": "Alliance Stargates",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance-stargates.php",
+                "nested_entry": "pages/alliance/subpages/alliance-stargates.php",
+                "definition": "config/page_definitions/alliance/alliance-stargates.php",
+                "logic": "config/page_logic/alliance/alliance-stargates.php",
+                "features": "config/page_features/alliance/alliance-stargates.php",
+                "design": "config/page_design_specs/alliance/alliance-stargates.php",
+                "systems": "config/page_systems/alliance/alliance-stargates.php",
+                "module": "includes/page_modules/alliance/alliance-stargates.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "alliance",
+            "route": "alliance-intelligence",
+            "title": "Alliance Intelligence",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance-intelligence.php",
+                "nested_entry": "pages/alliance/subpages/alliance-intelligence.php",
+                "definition": "config/page_definitions/alliance/alliance-intelligence.php",
+                "logic": "config/page_logic/alliance/alliance-intelligence.php",
+                "features": "config/page_features/alliance/alliance-intelligence.php",
+                "design": "config/page_design_specs/alliance/alliance-intelligence.php",
+                "systems": "config/page_systems/alliance/alliance-intelligence.php",
+                "module": "includes/page_modules/alliance/alliance-intelligence.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "lifeforms-population",
+            "title": "Population",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/lifeforms-population.php",
+                "nested_entry": "pages/lifeforms/subpages/lifeforms-population.php",
+                "definition": "config/page_definitions/lifeforms/lifeforms-population.php",
+                "logic": "config/page_logic/lifeforms/lifeforms-population.php",
+                "features": "config/page_features/lifeforms/lifeforms-population.php",
+                "design": "config/page_design_specs/lifeforms/lifeforms-population.php",
+                "systems": "config/page_systems/lifeforms/lifeforms-population.php",
+                "module": "includes/page_modules/lifeforms/lifeforms-population.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "food",
+            "title": "Food",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/food.php",
+                "nested_entry": "pages/lifeforms/subpages/food.php",
+                "definition": "config/page_definitions/lifeforms/food.php",
+                "logic": "config/page_logic/lifeforms/food.php",
+                "features": "config/page_features/lifeforms/food.php",
+                "design": "config/page_design_specs/lifeforms/food.php",
+                "systems": "config/page_systems/lifeforms/food.php",
+                "module": "includes/page_modules/lifeforms/food.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "lifeform-buildings",
+            "title": "Lifeform Buildings",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/lifeform-buildings.php",
+                "nested_entry": "pages/lifeforms/subpages/lifeform-buildings.php",
+                "definition": "config/page_definitions/lifeforms/lifeform-buildings.php",
+                "logic": "config/page_logic/lifeforms/lifeform-buildings.php",
+                "features": "config/page_features/lifeforms/lifeform-buildings.php",
+                "design": "config/page_design_specs/lifeforms/lifeform-buildings.php",
+                "systems": "config/page_systems/lifeforms/lifeform-buildings.php",
+                "module": "includes/page_modules/lifeforms/lifeform-buildings.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "lifeforms-lifeform-research",
+            "title": "Lifeform Research",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/lifeforms-lifeform-research.php",
+                "nested_entry": "pages/lifeforms/subpages/lifeforms-lifeform-research.php",
+                "definition": "config/page_definitions/lifeforms/lifeforms-lifeform-research.php",
+                "logic": "config/page_logic/lifeforms/lifeforms-lifeform-research.php",
+                "features": "config/page_features/lifeforms/lifeforms-lifeform-research.php",
+                "design": "config/page_design_specs/lifeforms/lifeforms-lifeform-research.php",
+                "systems": "config/page_systems/lifeforms/lifeforms-lifeform-research.php",
+                "module": "includes/page_modules/lifeforms/lifeforms-lifeform-research.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "civilization-tier",
+            "title": "Civilization Tier",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/civilization-tier.php",
+                "nested_entry": "pages/lifeforms/subpages/civilization-tier.php",
+                "definition": "config/page_definitions/lifeforms/civilization-tier.php",
+                "logic": "config/page_logic/lifeforms/civilization-tier.php",
+                "features": "config/page_features/lifeforms/civilization-tier.php",
+                "design": "config/page_design_specs/lifeforms/civilization-tier.php",
+                "systems": "config/page_systems/lifeforms/civilization-tier.php",
+                "module": "includes/page_modules/lifeforms/civilization-tier.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "traits",
+            "title": "Traits",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/traits.php",
+                "nested_entry": "pages/lifeforms/subpages/traits.php",
+                "definition": "config/page_definitions/lifeforms/traits.php",
+                "logic": "config/page_logic/lifeforms/traits.php",
+                "features": "config/page_features/lifeforms/traits.php",
+                "design": "config/page_design_specs/lifeforms/traits.php",
+                "systems": "config/page_systems/lifeforms/traits.php",
+                "module": "includes/page_modules/lifeforms/traits.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "lifeforms",
+            "route": "lifeform-bonuses",
+            "title": "Lifeform Bonuses",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/lifeform-bonuses.php",
+                "nested_entry": "pages/lifeforms/subpages/lifeform-bonuses.php",
+                "definition": "config/page_definitions/lifeforms/lifeform-bonuses.php",
+                "logic": "config/page_logic/lifeforms/lifeform-bonuses.php",
+                "features": "config/page_features/lifeforms/lifeform-bonuses.php",
+                "design": "config/page_design_specs/lifeforms/lifeform-bonuses.php",
+                "systems": "config/page_systems/lifeforms/lifeform-bonuses.php",
+                "module": "includes/page_modules/lifeforms/lifeform-bonuses.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "quests",
+            "title": "Quests",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/quests.php",
+                "nested_entry": "pages/activities/subpages/quests.php",
+                "definition": "config/page_definitions/activities/quests.php",
+                "logic": "config/page_logic/activities/quests.php",
+                "features": "config/page_features/activities/quests.php",
+                "design": "config/page_design_specs/activities/quests.php",
+                "systems": "config/page_systems/activities/quests.php",
+                "module": "includes/page_modules/activities/quests.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "activities-expeditions",
+            "title": "Expeditions",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/activities-expeditions.php",
+                "nested_entry": "pages/activities/subpages/activities-expeditions.php",
+                "definition": "config/page_definitions/activities/activities-expeditions.php",
+                "logic": "config/page_logic/activities/activities-expeditions.php",
+                "features": "config/page_features/activities/activities-expeditions.php",
+                "design": "config/page_design_specs/activities/activities-expeditions.php",
+                "systems": "config/page_systems/activities/activities-expeditions.php",
+                "module": "includes/page_modules/activities/activities-expeditions.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "pirate-hunting",
+            "title": "Pirate Hunting",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/pirate-hunting.php",
+                "nested_entry": "pages/activities/subpages/pirate-hunting.php",
+                "definition": "config/page_definitions/activities/pirate-hunting.php",
+                "logic": "config/page_logic/activities/pirate-hunting.php",
+                "features": "config/page_features/activities/pirate-hunting.php",
+                "design": "config/page_design_specs/activities/pirate-hunting.php",
+                "systems": "config/page_systems/activities/pirate-hunting.php",
+                "module": "includes/page_modules/activities/pirate-hunting.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "bounty-board",
+            "title": "Bounty Board",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/bounty-board.php",
+                "nested_entry": "pages/activities/subpages/bounty-board.php",
+                "definition": "config/page_definitions/activities/bounty-board.php",
+                "logic": "config/page_logic/activities/bounty-board.php",
+                "features": "config/page_features/activities/bounty-board.php",
+                "design": "config/page_design_specs/activities/bounty-board.php",
+                "systems": "config/page_systems/activities/bounty-board.php",
+                "module": "includes/page_modules/activities/bounty-board.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "world-bosses",
+            "title": "World Bosses",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/world-bosses.php",
+                "nested_entry": "pages/activities/subpages/world-bosses.php",
+                "definition": "config/page_definitions/activities/world-bosses.php",
+                "logic": "config/page_logic/activities/world-bosses.php",
+                "features": "config/page_features/activities/world-bosses.php",
+                "design": "config/page_design_specs/activities/world-bosses.php",
+                "systems": "config/page_systems/activities/world-bosses.php",
+                "module": "includes/page_modules/activities/world-bosses.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "activities-anomalies",
+            "title": "Anomalies",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/activities-anomalies.php",
+                "nested_entry": "pages/activities/subpages/activities-anomalies.php",
+                "definition": "config/page_definitions/activities/activities-anomalies.php",
+                "logic": "config/page_logic/activities/activities-anomalies.php",
+                "features": "config/page_features/activities/activities-anomalies.php",
+                "design": "config/page_design_specs/activities/activities-anomalies.php",
+                "systems": "config/page_systems/activities/activities-anomalies.php",
+                "module": "includes/page_modules/activities/activities-anomalies.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "activities-campaigns",
+            "title": "Campaigns",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/activities-campaigns.php",
+                "nested_entry": "pages/activities/subpages/activities-campaigns.php",
+                "definition": "config/page_definitions/activities/activities-campaigns.php",
+                "logic": "config/page_logic/activities/activities-campaigns.php",
+                "features": "config/page_features/activities/activities-campaigns.php",
+                "design": "config/page_design_specs/activities/activities-campaigns.php",
+                "systems": "config/page_systems/activities/activities-campaigns.php",
+                "module": "includes/page_modules/activities/activities-campaigns.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "achievements",
+            "title": "Achievements",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/achievements.php",
+                "nested_entry": "pages/activities/subpages/achievements.php",
+                "definition": "config/page_definitions/activities/achievements.php",
+                "logic": "config/page_logic/activities/achievements.php",
+                "features": "config/page_features/activities/achievements.php",
+                "design": "config/page_design_specs/activities/achievements.php",
+                "systems": "config/page_systems/activities/achievements.php",
+                "module": "includes/page_modules/activities/achievements.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "activities",
+            "route": "seasonal-events",
+            "title": "Seasonal Events",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/seasonal-events.php",
+                "nested_entry": "pages/activities/subpages/seasonal-events.php",
+                "definition": "config/page_definitions/activities/seasonal-events.php",
+                "logic": "config/page_logic/activities/seasonal-events.php",
+                "features": "config/page_features/activities/seasonal-events.php",
+                "design": "config/page_design_specs/activities/seasonal-events.php",
+                "systems": "config/page_systems/activities/seasonal-events.php",
+                "module": "includes/page_modules/activities/seasonal-events.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "glory",
+            "title": "Glory",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/glory.php",
+                "nested_entry": "pages/prestige/subpages/glory.php",
+                "definition": "config/page_definitions/prestige/glory.php",
+                "logic": "config/page_logic/prestige/glory.php",
+                "features": "config/page_features/prestige/glory.php",
+                "design": "config/page_design_specs/prestige/glory.php",
+                "systems": "config/page_systems/prestige/glory.php",
+                "module": "includes/page_modules/prestige/glory.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "reputation",
+            "title": "Reputation",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/reputation.php",
+                "nested_entry": "pages/prestige/subpages/reputation.php",
+                "definition": "config/page_definitions/prestige/reputation.php",
+                "logic": "config/page_logic/prestige/reputation.php",
+                "features": "config/page_features/prestige/reputation.php",
+                "design": "config/page_design_specs/prestige/reputation.php",
+                "systems": "config/page_systems/prestige/reputation.php",
+                "module": "includes/page_modules/prestige/reputation.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "prestige-ascension",
+            "title": "Ascension",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/prestige-ascension.php",
+                "nested_entry": "pages/prestige/subpages/prestige-ascension.php",
+                "definition": "config/page_definitions/prestige/prestige-ascension.php",
+                "logic": "config/page_logic/prestige/prestige-ascension.php",
+                "features": "config/page_features/prestige/prestige-ascension.php",
+                "design": "config/page_design_specs/prestige/prestige-ascension.php",
+                "systems": "config/page_systems/prestige/prestige-ascension.php",
+                "module": "includes/page_modules/prestige/prestige-ascension.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "re-ascension",
+            "title": "Re-Ascension",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/re-ascension.php",
+                "nested_entry": "pages/prestige/subpages/re-ascension.php",
+                "definition": "config/page_definitions/prestige/re-ascension.php",
+                "logic": "config/page_logic/prestige/re-ascension.php",
+                "features": "config/page_features/prestige/re-ascension.php",
+                "design": "config/page_design_specs/prestige/re-ascension.php",
+                "systems": "config/page_systems/prestige/re-ascension.php",
+                "module": "includes/page_modules/prestige/re-ascension.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "ascended-races",
+            "title": "Ascended Races",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/ascended-races.php",
+                "nested_entry": "pages/prestige/subpages/ascended-races.php",
+                "definition": "config/page_definitions/prestige/ascended-races.php",
+                "logic": "config/page_logic/prestige/ascended-races.php",
+                "features": "config/page_features/prestige/ascended-races.php",
+                "design": "config/page_design_specs/prestige/ascended-races.php",
+                "systems": "config/page_systems/prestige/ascended-races.php",
+                "module": "includes/page_modules/prestige/ascended-races.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "titles",
+            "title": "Titles",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/titles.php",
+                "nested_entry": "pages/prestige/subpages/titles.php",
+                "definition": "config/page_definitions/prestige/titles.php",
+                "logic": "config/page_logic/prestige/titles.php",
+                "features": "config/page_features/prestige/titles.php",
+                "design": "config/page_design_specs/prestige/titles.php",
+                "systems": "config/page_systems/prestige/titles.php",
+                "module": "includes/page_modules/prestige/titles.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "prestige",
+            "route": "permanent-bonuses",
+            "title": "Permanent Bonuses",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/permanent-bonuses.php",
+                "nested_entry": "pages/prestige/subpages/permanent-bonuses.php",
+                "definition": "config/page_definitions/prestige/permanent-bonuses.php",
+                "logic": "config/page_logic/prestige/permanent-bonuses.php",
+                "features": "config/page_features/prestige/permanent-bonuses.php",
+                "design": "config/page_design_specs/prestige/permanent-bonuses.php",
+                "systems": "config/page_systems/prestige/permanent-bonuses.php",
+                "module": "includes/page_modules/prestige/permanent-bonuses.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "empire",
+            "title": "Empire",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/empire.php",
+                "nested_entry": "pages/rankings/subpages/empire.php",
+                "definition": "config/page_definitions/rankings/empire.php",
+                "logic": "config/page_logic/rankings/empire.php",
+                "features": "config/page_features/rankings/empire.php",
+                "design": "config/page_design_specs/rankings/empire.php",
+                "systems": "config/page_systems/rankings/empire.php",
+                "module": "includes/page_modules/rankings/empire.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "economy",
+            "title": "Economy",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/economy.php",
+                "nested_entry": "pages/rankings/subpages/economy.php",
+                "definition": "config/page_definitions/rankings/economy.php",
+                "logic": "config/page_logic/rankings/economy.php",
+                "features": "config/page_features/rankings/economy.php",
+                "design": "config/page_design_specs/rankings/economy.php",
+                "systems": "config/page_systems/rankings/economy.php",
+                "module": "includes/page_modules/rankings/economy.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "fleet",
+            "title": "Fleet",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/fleet.php",
+                "nested_entry": "pages/rankings/subpages/fleet.php",
+                "definition": "config/page_definitions/rankings/fleet.php",
+                "logic": "config/page_logic/rankings/fleet.php",
+                "features": "config/page_features/rankings/fleet.php",
+                "design": "config/page_design_specs/rankings/fleet.php",
+                "systems": "config/page_systems/rankings/fleet.php",
+                "module": "includes/page_modules/rankings/fleet.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "research",
+            "title": "Research",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/research.php",
+                "nested_entry": "pages/rankings/subpages/research.php",
+                "definition": "config/page_definitions/rankings/research.php",
+                "logic": "config/page_logic/rankings/research.php",
+                "features": "config/page_features/rankings/research.php",
+                "design": "config/page_design_specs/rankings/research.php",
+                "systems": "config/page_systems/rankings/research.php",
+                "module": "includes/page_modules/rankings/research.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "rankings-defense",
+            "title": "Defense",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/rankings-defense.php",
+                "nested_entry": "pages/rankings/subpages/rankings-defense.php",
+                "definition": "config/page_definitions/rankings/rankings-defense.php",
+                "logic": "config/page_logic/rankings/rankings-defense.php",
+                "features": "config/page_features/rankings/rankings-defense.php",
+                "design": "config/page_design_specs/rankings/rankings-defense.php",
+                "systems": "config/page_systems/rankings/rankings-defense.php",
+                "module": "includes/page_modules/rankings/rankings-defense.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "covert",
+            "title": "Covert",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/covert.php",
+                "nested_entry": "pages/rankings/subpages/covert.php",
+                "definition": "config/page_definitions/rankings/covert.php",
+                "logic": "config/page_logic/rankings/covert.php",
+                "features": "config/page_features/rankings/covert.php",
+                "design": "config/page_design_specs/rankings/covert.php",
+                "systems": "config/page_systems/rankings/covert.php",
+                "module": "includes/page_modules/rankings/covert.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "alliance",
+            "title": "Alliance",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/alliance.php",
+                "nested_entry": "pages/rankings/subpages/alliance.php",
+                "definition": "config/page_definitions/rankings/alliance.php",
+                "logic": "config/page_logic/rankings/alliance.php",
+                "features": "config/page_features/rankings/alliance.php",
+                "design": "config/page_design_specs/rankings/alliance.php",
+                "systems": "config/page_systems/rankings/alliance.php",
+                "module": "includes/page_modules/rankings/alliance.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "lifeform",
+            "title": "Lifeform",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/lifeform.php",
+                "nested_entry": "pages/rankings/subpages/lifeform.php",
+                "definition": "config/page_definitions/rankings/lifeform.php",
+                "logic": "config/page_logic/rankings/lifeform.php",
+                "features": "config/page_features/rankings/lifeform.php",
+                "design": "config/page_design_specs/rankings/lifeform.php",
+                "systems": "config/page_systems/rankings/lifeform.php",
+                "module": "includes/page_modules/rankings/lifeform.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "rankings",
+            "route": "galactic-control",
+            "title": "Galactic Control",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/galactic-control.php",
+                "nested_entry": "pages/rankings/subpages/galactic-control.php",
+                "definition": "config/page_definitions/rankings/galactic-control.php",
+                "logic": "config/page_logic/rankings/galactic-control.php",
+                "features": "config/page_features/rankings/galactic-control.php",
+                "design": "config/page_design_specs/rankings/galactic-control.php",
+                "systems": "config/page_systems/rankings/galactic-control.php",
+                "module": "includes/page_modules/rankings/galactic-control.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "premium",
+            "route": "store",
+            "title": "Store",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/store.php",
+                "nested_entry": "pages/premium/subpages/store.php",
+                "definition": "config/page_definitions/premium/store.php",
+                "logic": "config/page_logic/premium/store.php",
+                "features": "config/page_features/premium/store.php",
+                "design": "config/page_design_specs/premium/store.php",
+                "systems": "config/page_systems/premium/store.php",
+                "module": "includes/page_modules/premium/store.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "premium",
+            "route": "premium-officers",
+            "title": "Officers",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/premium-officers.php",
+                "nested_entry": "pages/premium/subpages/premium-officers.php",
+                "definition": "config/page_definitions/premium/premium-officers.php",
+                "logic": "config/page_logic/premium/premium-officers.php",
+                "features": "config/page_features/premium/premium-officers.php",
+                "design": "config/page_design_specs/premium/premium-officers.php",
+                "systems": "config/page_systems/premium/premium-officers.php",
+                "module": "includes/page_modules/premium/premium-officers.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "premium",
+            "route": "commander",
+            "title": "Commander",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/commander.php",
+                "nested_entry": "pages/premium/subpages/commander.php",
+                "definition": "config/page_definitions/premium/commander.php",
+                "logic": "config/page_logic/premium/commander.php",
+                "features": "config/page_features/premium/commander.php",
+                "design": "config/page_design_specs/premium/commander.php",
+                "systems": "config/page_systems/premium/commander.php",
+                "module": "includes/page_modules/premium/commander.php"
+            },
+            "exists": {
+                "root_entry": true,
+                "nested_entry": true,
+                "definition": true,
+                "logic": true,
+                "features": true,
+                "design": true,
+                "systems": true,
+                "module": true
+            },
+            "missing": [],
+            "complete": true
+        },
+        {
+            "group": "premium",
+            "route": "premium-services",
+            "title": "Premium Services",
+            "actions": [],
+            "tables": [
+                "game_events"
+            ],
+            "feedback_states": [],
+            "paths": {
+                "root_entry": "pages/premium-services.php",
+                "nested_entry": "pages/premium/subpages/premium-services.php",
+                "definition": "config/page_definitions/premium/premium-services.php",
+                "logic": "config/page_logic/premium/premium-services.php",
+                "features": "config/page_features/premium/premium-services.php",
+                "design": "config/page_design_specs/premium/premium-services.php",
+                "systems": "config/page_systems/premium/premium-services.php",
+                "module": "includes/page_modules/premium/premium-services.php"
             },
             "exists": {
                 "root_entry": true,
