@@ -4,10 +4,13 @@ return array (
   'title' => 'Sabotage Operations',
   'features' => 
   array (
-    0 => 'summary metrics',
-    1 => 'status badges',
-    2 => 'related-page navigation',
-    3 => 'empty-state guidance',
+    0 => 'target selection',
+    1 => 'fleet readiness',
+    2 => 'agent allocation',
+    3 => 'detection meter',
+    4 => 'battle outcome',
+    5 => 'classified reports',
+    6 => 'cooldown visibility',
   ),
   'sub_features' => 
   array (

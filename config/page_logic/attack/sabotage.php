@@ -22,9 +22,18 @@ return array (
   ),
   'calculations' => 
   array (
-    0 => 'server-authoritative subsystem state = validated inputs + scoped records + pending operations',
+    0 => 'detection = defender counter-intelligence − attacker agents − covert technology',
   ),
   'mutations' => 
   array (
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
 );

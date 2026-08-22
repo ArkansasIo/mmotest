@@ -110,7 +110,7 @@ The repository currently contains a registry-driven PHP game shell with **28 men
 
 - [ ] Complete the Intelligence page-specific renderer for Spy Log, Enemy Intelligence, Spy Missions, Reconnaissance, Sabotage, Counter-Espionage, Sensor Phalanx, Fleet Activity, and Intelligence Reports.
 - [ ] Wire the enriched Espionage page controls to `EspionageScanningService` for reconnaissance, spy, and sabotage mutations.
-- [ ] Complete target board filtering, protection checks, agent availability, detection probability, and cooldown display.
+- [x] Complete target board filtering, protection checks, agent availability, detection probability, and cooldown display in the shared covert-operation contract; live service/UI verification remains ongoing.
 - [ ] Verify classified report ownership, redaction, read state, retention, and report expiry.
 - [ ] Add anti-abuse limits for repeated scanning and covert mission submissions.
 
@@ -152,7 +152,7 @@ The repository currently contains a registry-driven PHP game shell with **28 men
 - [ ] Add consistent empty, loading, protected, cooldown, insufficient-resource, success, and error views to every mutation-capable page.
 - [ ] Add visible server-action audit status after every mutation.
 - [ ] Add mobile navigation tests for every group and submenu expansion state.
-- [ ] Add a navigation sitemap generated from `config/page_registry.php` and `config/menu_page_paths.php`.
+- [x] Add a navigation sitemap generated from `config/page_registry.php` and `config/menu_page_paths.php` (`tools/generate_navigation_sitemap.php`).
 
 ## 7. P2 UI, theme, and design TODOs
 
@@ -167,7 +167,7 @@ The repository currently contains a registry-driven PHP game shell with **28 men
 
 ## 8. P2 testing TODOs
 
-- [ ] Create a single `tests/run_all.php` runner with machine-readable JSON output and nonzero failure status.
+- [x] Create a single `tests/run_all.php` runner with machine-readable JSON output and nonzero failure status.
 - [ ] Split tests into unit, contract, integration, browser, load, and migration suites.
 - [ ] Add clean-database fixtures and isolated transactions for every mutation test.
 - [ ] Add two-account ownership tests for every action family.
@@ -185,7 +185,7 @@ The repository currently contains a registry-driven PHP game shell with **28 men
 - [ ] Configure HTTPS, secure cookies, trusted proxy handling, and security headers.
 - [ ] Add a process supervisor for PHP workers and scheduled turn processing.
 - [ ] Add structured logs for request ID, commander ID, route, action, duration, result state, and transaction outcome.
-- [ ] Add health, readiness, database, cron, and queue monitoring endpoints.
+- [ ] Add health, readiness, database, cron, and queue monitoring endpoints. A first health endpoint now exists at `health.php`; database readiness remains degraded until the configured MariaDB connection is available.
 - [ ] Add deployment smoke tests that open the public landing page, login page, game shell, Premium page, Alliance page, and Coordinate Search page.
 - [ ] Add rollback instructions for code, migrations, and assets.
 - [ ] Add CI checks for PHP lint, route audit, AJAX audit, migrations, tests, and forbidden debug output.

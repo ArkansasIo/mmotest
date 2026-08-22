@@ -7,24 +7,35 @@ return array (
   'title' => 'Target Selection',
   'layout' => 'targets',
   'purpose' => 'Target Selection subsystem console with server-authoritative state, controls, dependencies, and feedback.',
-  'mechanic' => 'server-authoritative subsystem state = validated inputs + scoped records + pending operations',
+  'mechanic' => 'detection = defender counter-intelligence − attacker agents − covert technology',
   'controls' => 
   array (
-    0 => 'open overview',
-    1 => 'review status',
-    2 => 'inspect records',
-    3 => 'review alerts',
+    0 => 'select target',
+    1 => 'inspect defense',
+    2 => 'run reconnaissance',
+    3 => 'run spy mission',
+    4 => 'run sabotage',
+    5 => 'review reports',
   ),
   'actions' => 
   array (
-    0 => 'inspect_page',
-    1 => 'refresh_page',
+    0 => 'combat',
+    1 => 'covert:recon',
+    2 => 'covert:spy',
+    3 => 'covert:sabotage',
+    4 => 'refresh_page',
   ),
   'tables' => 
   array (
-    0 => 'players',
-    1 => 'player_resources',
-    2 => 'game_events',
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
   'details' => 
   array (
@@ -56,18 +67,30 @@ return array (
     ),
     'calculations' => 
     array (
-      0 => 'server-authoritative subsystem state = validated inputs + scoped records + pending operations',
+      0 => 'detection = defender counter-intelligence − attacker agents − covert technology',
     ),
     'mutations' => 
     array (
+      0 => 'target_realms',
+      1 => 'players',
+      2 => 'player_resources',
+      3 => 'protection_states',
+      4 => 'battles',
+      5 => 'battle_reports',
+      6 => 'covert_missions',
+      7 => 'intelligence_reports',
+      8 => 'game_events',
     ),
   ),
   'features' => 
   array (
-    0 => 'summary metrics',
-    1 => 'status badges',
-    2 => 'related-page navigation',
-    3 => 'empty-state guidance',
+    0 => 'target selection',
+    1 => 'fleet readiness',
+    2 => 'agent allocation',
+    3 => 'detection meter',
+    4 => 'battle outcome',
+    5 => 'classified reports',
+    6 => 'cooldown visibility',
   ),
   'sub_features' => 
   array (
@@ -108,17 +131,35 @@ return array (
     ),
     'reads' => 
     array (
-      0 => 'players',
-      1 => 'player_resources',
-      2 => 'game_events',
+      0 => 'target_realms',
+      1 => 'players',
+      2 => 'player_resources',
+      3 => 'protection_states',
+      4 => 'battles',
+      5 => 'battle_reports',
+      6 => 'covert_missions',
+      7 => 'intelligence_reports',
+      8 => 'game_events',
     ),
     'writes' => 
     array (
+      0 => 'target_realms',
+      1 => 'players',
+      2 => 'player_resources',
+      3 => 'protection_states',
+      4 => 'battles',
+      5 => 'battle_reports',
+      6 => 'covert_missions',
+      7 => 'intelligence_reports',
+      8 => 'game_events',
     ),
     'actions' => 
     array (
-      0 => 'inspect_page',
-      1 => 'refresh_page',
+      0 => 'combat',
+      1 => 'covert:recon',
+      2 => 'covert:spy',
+      3 => 'covert:sabotage',
+      4 => 'refresh_page',
     ),
     'permissions' => 
     array (

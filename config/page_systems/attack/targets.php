@@ -7,17 +7,35 @@ return array (
   ),
   'reads' => 
   array (
-    0 => 'players',
-    1 => 'player_resources',
-    2 => 'game_events',
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
   'writes' => 
   array (
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
   'actions' => 
   array (
-    0 => 'inspect_page',
-    1 => 'refresh_page',
+    0 => 'combat',
+    1 => 'covert:recon',
+    2 => 'covert:spy',
+    3 => 'covert:sabotage',
+    4 => 'refresh_page',
   ),
   'permissions' => 
   array (

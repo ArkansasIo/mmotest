@@ -10,6 +10,13 @@ $templates = [
         'features' => ['target board', 'agent allocation', 'detection meter', 'reconnaissance reports', 'spy mission reports', 'bounded sabotage', 'classified report access', 'cooldown visibility'],
         'functions' => ['select target', 'allocate agents', 'run reconnaissance', 'run spy mission', 'run sabotage', 'review classified reports'],
     ],
+    'attack' => [
+        'formula' => 'detection = defender counter-intelligence − attacker agents − covert technology',
+        'actions' => ['combat', 'covert:recon', 'covert:spy', 'covert:sabotage', 'refresh_page'],
+        'tables' => ['target_realms', 'players', 'player_resources', 'protection_states', 'battles', 'battle_reports', 'covert_missions', 'intelligence_reports', 'game_events'],
+        'features' => ['target selection', 'fleet readiness', 'agent allocation', 'detection meter', 'battle outcome', 'classified reports', 'cooldown visibility'],
+        'functions' => ['select target', 'inspect defense', 'run reconnaissance', 'run spy mission', 'run sabotage', 'review reports'],
+    ],
     'alliance' => [
         'formula' => 'alliance capacity = command level × alliance technology × government modifier',
         'actions' => ['alliance_create', 'alliance_join', 'diplomacy_propose', 'refresh_page'],
