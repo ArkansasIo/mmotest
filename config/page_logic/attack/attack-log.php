@@ -1,85 +1,39 @@
 <?php
+declare(strict_types=1);
 return array (
-  'purpose' => 'Show battle, spy, sabotage, and system reports only to authorized recipients.',
-  'workflow' =>
+  'purpose' => 'Attack Log & Reports operations',
+  'workflow' => 
   array (
-    0 => 'load recipient reports',
-    1 => 'classify payload',
-    2 => 'filter read state',
-    3 => 'open or mark report read',
-    4 => 'write audit state',
+    0 => 'load scoped state',
+    1 => 'validate authenticated intent',
+    2 => 'lock required records',
+    3 => 'resolve authoritative mechanic',
+    4 => 'write audit event',
+    5 => 'return feedback',
   ),
-  'validation' =>
+  'validation' => 
   array (
-    0 => 'authenticated report recipient',
-    1 => 'recipient ownership',
-    2 => 'classification access',
+    0 => 'authenticated commander',
+    1 => 'CSRF token',
+    2 => 'RBAC policy',
+    3 => 'ownership scope',
+    4 => 'cooldown validation',
+    5 => 'transaction boundary',
   ),
-  'calculations' =>
+  'calculations' => 
   array (
-    0 => 'recipient ownership + report classification + read status',
+    0 => 'detection = defender counter-intelligence − attacker agents − covert technology',
   ),
-  'mutations' =>
+  'mutations' => 
   array (
-    0 => 'messages',
-    1 => 'game_audit_log',
-  ),
-  'page_title' => 'Attack Log & Reports',
-  'layout_family' => 'reports',
-  'functions' =>
-  array (
-    0 => 'load_state',
-    1 => 'validate_intent',
-    2 => 'preview_action',
-    3 => 'render_ready_state',
-    4 => 'render_empty_state',
-    5 => 'render_error_state',
-    6 => 'handle_message_read',
-  ),
-  'sub_functions' =>
-  array (
-    0 => 'load_owned_reports',
-    1 => 'classify_payload',
-    2 => 'mark_report_read',
-    3 => 'audit_report_access',
-  ),
-  'state_transitions' =>
-  array (
-    'loading' => 'load scoped state and render skeleton',
-    'ready' => 'display authoritative state and enable permitted controls',
-    'empty' => 'display an explicit no-records state without fabricating data',
-    'submitting' => 'disable duplicate submission and show progress',
-    'success' => 'refresh live state, append event, and announce result',
-    'protected' => 'explain protection or ownership restriction without leaking data',
-    'cooldown' => 'display remaining server cooldown and disable action',
-    'insufficient-resource' => 'display missing resources and preserve state',
-    'error' => 'display safe error feedback and retain navigation context',
-  ),
-  'server_authority' =>
-  array (
-    'client_submits_intent_only' => true,
-    'server_recalculates_costs' => true,
-    'server_validates_ownership' => true,
-    'server_commits_transaction' => true,
-  ),
-  'data_flow' =>
-  array (
-    'reads' =>
-    array (
-      0 => 'battles',
-      1 => 'battle_reports',
-      2 => 'attack_logs',
-    ),
-    'writes' =>
-    array (
-      0 => 'battles',
-      1 => 'battle_reports',
-      2 => 'attack_logs',
-    ),
-    'actions' =>
-    array (
-      0 => 'message_read',
-    ),
-    'event_sink' => 'game_events',
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
 );

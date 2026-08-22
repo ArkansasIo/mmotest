@@ -1,49 +1,21 @@
 <?php
+declare(strict_types=1);
 return array (
-  'page_title' => 'Unit Production',
-  0 => 'current production',
-  1 => 'next-level cost',
-  2 => 'queue status',
-  3 => 'upgrade effects',
-  4 => 'production preview',
-  'feature_matrix' =>
+  'title' => 'Unit Production',
+  'features' => 
   array (
-    'core' =>
-    array (
-      0 => 'state snapshot',
-      1 => 'permission-aware rendering',
-      2 => 'feedback-state rendering',
-    ),
-    'controls' =>
-    array (
-      0 => 'Upgrade UP',
-    ),
-    'actions' =>
-    array (
-      0 => 'upgrade_up',
-    ),
-    'data_sources' =>
-    array (
-      0 => 'unit_types',
-      1 => 'player_unit_stats',
-      2 => 'training_queues',
-      3 => 'player_resources',
-      4 => 'game_events',
-    ),
+    0 => 'summary metrics',
+    1 => 'status badges',
+    2 => 'related-page navigation',
+    3 => 'empty-state guidance',
   ),
-  'sub_features' =>
+  'sub_features' => 
   array (
-    0 => 'load_page_state',
-    1 => 'validate_page_scope',
-    2 => 'calculate_page_metrics',
-    3 => 'render_page_result',
-  ),
-  'acceptance_criteria' =>
-  array (
-    0 => 'unauthorized input rejected',
-    1 => 'negative quantities rejected',
-    2 => 'empty state handled',
-    3 => 'success refreshes state',
-    4 => 'database mutation is transactional',
+    0 => 'loading and refresh state',
+    1 => 'permission-aware controls',
+    2 => 'related-page navigation',
+    3 => 'filter and sort state',
+    4 => 'empty-state explanation',
+    5 => 'audit and feedback detail',
   ),
 );

@@ -1,46 +1,21 @@
 <?php
+declare(strict_types=1);
 return array (
-  'page_title' => 'Exploration',
-  0 => 'discovery range',
-  1 => 'system scan',
-  2 => 'anomaly chance',
-  3 => 'discovery rewards',
-  4 => 'travel risk',
-  'feature_matrix' =>
+  'title' => 'Exploration',
+  'features' => 
   array (
-    'core' =>
-    array (
-      0 => 'state snapshot',
-      1 => 'permission-aware rendering',
-      2 => 'feedback-state rendering',
-    ),
-    'controls' =>
-    array (
-      0 => 'Explore planet',
-    ),
-    'actions' =>
-    array (
-      0 => 'explore',
-    ),
-    'data_sources' =>
-    array (
-      0 => 'motherships',
-      1 => 'planet_explorations',
-    ),
+    0 => 'summary metrics',
+    1 => 'status badges',
+    2 => 'related-page navigation',
+    3 => 'empty-state guidance',
   ),
-  'sub_features' =>
+  'sub_features' => 
   array (
-    0 => 'validate_expedition_readiness',
-    1 => 'calculate_travel_time',
-    2 => 'resolve_anomaly',
-    3 => 'persist_discovery_reward',
-  ),
-  'acceptance_criteria' =>
-  array (
-    0 => 'unauthorized input rejected',
-    1 => 'negative quantities rejected',
-    2 => 'empty state handled',
-    3 => 'success refreshes state',
-    4 => 'database mutation is transactional',
+    0 => 'loading and refresh state',
+    1 => 'permission-aware controls',
+    2 => 'related-page navigation',
+    3 => 'filter and sort state',
+    4 => 'empty-state explanation',
+    5 => 'audit and feedback detail',
   ),
 );

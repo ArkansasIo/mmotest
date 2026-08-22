@@ -1,47 +1,21 @@
 <?php
+declare(strict_types=1);
 return array (
-  'page_title' => 'Planet Defenses',
-  0 => 'planet portfolio',
-  1 => 'biome modifiers',
-  2 => 'defenses',
-  3 => 'population',
-  4 => 'food and water',
-  5 => 'exploration',
-  6 => 'colonization',
-  'feature_matrix' =>
+  'title' => 'Planet Defenses',
+  'features' => 
   array (
-    'core' =>
-    array (
-      0 => 'state snapshot',
-      1 => 'permission-aware rendering',
-      2 => 'feedback-state rendering',
-    ),
-    'controls' =>
-    array (
-      0 => 'Upgrade defense',
-    ),
-    'actions' =>
-    array (
-      0 => 'planet_defense',
-    ),
-    'data_sources' =>
-    array (
-      0 => 'planet_defenses',
-    ),
+    0 => 'summary metrics',
+    1 => 'status badges',
+    2 => 'related-page navigation',
+    3 => 'empty-state guidance',
   ),
-  'sub_features' =>
+  'sub_features' => 
   array (
-    0 => 'load_colony_portfolio',
-    1 => 'calculate_life_support',
-    2 => 'validate_habitability',
-    3 => 'queue_colony_action',
-  ),
-  'acceptance_criteria' =>
-  array (
-    0 => 'unauthorized input rejected',
-    1 => 'negative quantities rejected',
-    2 => 'empty state handled',
-    3 => 'success refreshes state',
-    4 => 'database mutation is transactional',
+    0 => 'loading and refresh state',
+    1 => 'permission-aware controls',
+    2 => 'related-page navigation',
+    3 => 'filter and sort state',
+    4 => 'empty-state explanation',
+    5 => 'audit and feedback detail',
   ),
 );

@@ -1,277 +1,185 @@
 <?php
+declare(strict_types=1);
 return array (
   'route' => 'targets',
   'group' => 'attack',
   'group_label' => 'Attack',
   'title' => 'Target Selection',
   'layout' => 'targets',
+  'purpose' => 'Target Selection subsystem console with server-authoritative state, controls, dependencies, and feedback.',
+  'mechanic' => 'detection = defender counter-intelligence − attacker agents − covert technology',
   'controls' => 
   array (
-    0 => 'Attack',
-    1 => 'Raid',
-    2 => 'Spy',
-    3 => 'Sabotage',
-    4 => 'Conquer Planet',
-    5 => 'Message',
+    0 => 'select target',
+    1 => 'inspect defense',
+    2 => 'run reconnaissance',
+    3 => 'run spy mission',
+    4 => 'run sabotage',
+    5 => 'review reports',
   ),
   'actions' => 
   array (
     0 => 'combat',
-    1 => 'covert',
-    2 => 'explore',
-    3 => 'message',
+    1 => 'covert:recon',
+    2 => 'covert:spy',
+    3 => 'covert:sabotage',
+    4 => 'refresh_page',
   ),
   'tables' => 
   array (
     0 => 'target_realms',
     1 => 'players',
-    2 => 'battles',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
   'details' => 
   array (
-    'hero' => 'Target Selection',
-    'panels' => 
-    array (
-      0 => 'Known realms',
-      1 => 'Protection status',
-      2 => 'Combat preview',
-      3 => 'Operation costs',
-    ),
-    'formula' => 'battle outcome = validated force comparison + technology + defense + deterministic resolver',
-    'controls' => 
-    array (
-      0 => 'Attack',
-      1 => 'Raid',
-      2 => 'Spy',
-      3 => 'Sabotage',
-      4 => 'Conquer planet',
-      5 => 'Message',
-    ),
-    'action' => 'combat',
-    'tables' => 
-    array (
-      0 => 'target_realms',
-      1 => 'players',
-      2 => 'rankings',
-      3 => 'protection_states',
-      4 => 'battles',
-    ),
-    'permission' => 'authenticated commander with attack turns',
-    'states' => 
-    array (
-      0 => 'ready',
-      1 => 'protected',
-      2 => 'insufficient-resource',
-      3 => 'cooldown',
-      4 => 'success',
-      5 => 'error',
-    ),
-  ),
-  'interaction' => 
-  array (
-    'page' => 'Target Selection',
-    'purpose' => 'Choose and preview offensive or covert operations.',
-    'buttons' => 
-    array (
-      'Attack' => 
-      array (
-        'action' => 'combat',
-        'logic' => 'Validate target, protection, attack turns, fleet or units, then resolve combat transactionally.',
-        'permission' => 'authenticated commander with attack turns',
-        'reads' => 
-        array (
-          0 => 'target_realms',
-          1 => 'players',
-          2 => 'battles',
-          3 => 'protection_states',
-        ),
-        'writes' => 
-        array (
-          0 => 'battles',
-          1 => 'battle_rounds',
-          2 => 'battle_reports',
-          3 => 'attack_logs',
-        ),
-        'states' => 
-        array (
-          0 => 'ready',
-          1 => 'protected',
-          2 => 'insufficient-resource',
-          3 => 'cooldown',
-          4 => 'success',
-          5 => 'error',
-        ),
-      ),
-      'Raid' => 
-      array (
-        'action' => 'combat:raid',
-        'logic' => 'Resolve reduced-force combat with resource-loot rules.',
-        'permission' => 'authenticated commander with attack turns',
-        'reads' => 
-        array (
-          0 => 'target_realms',
-          1 => 'player_resources',
-        ),
-        'writes' => 
-        array (
-          0 => 'battles',
-          1 => 'battle_reports',
-          2 => 'player_resources',
-        ),
-        'states' => 
-        array (
-          0 => 'ready',
-          1 => 'protected',
-          2 => 'success',
-          3 => 'error',
-        ),
-      ),
-      'Spy' => 
-      array (
-        'action' => 'covert:spy',
-        'logic' => 'Allocate agents, calculate detection, and generate intelligence payload.',
-        'permission' => 'authenticated commander with spies',
-        'reads' => 
-        array (
-          0 => 'covert_agents',
-          1 => 'anti_covert_agents',
-          2 => 'technologies',
-        ),
-        'writes' => 
-        array (
-          0 => 'spy_missions',
-          1 => 'intelligence_reports',
-        ),
-        'states' => 
-        array (
-          0 => 'ready',
-          1 => 'insufficient-resource',
-          2 => 'success',
-          3 => 'error',
-        ),
-      ),
-      'Sabotage' => 
-      array (
-        'action' => 'covert:sabotage',
-        'logic' => 'Target a system, calculate detection, and apply bounded damage.',
-        'permission' => 'authenticated commander with spies',
-        'reads' => 
-        array (
-          0 => 'covert_agents',
-          1 => 'target_realms',
-        ),
-        'writes' => 
-        array (
-          0 => 'sabotage_missions',
-          1 => 'intelligence_reports',
-          2 => 'game_events',
-        ),
-        'states' => 
-        array (
-          0 => 'ready',
-          1 => 'insufficient-resource',
-          2 => 'success',
-          3 => 'error',
-        ),
-      ),
-    ),
+    'current state' => 'server-calculated telemetry',
+    'available controls' => 'permission-aware operations',
+    'dependencies' => 'validated prerequisites and cooldowns',
+    'audit' => 'transactional event history',
   ),
   'logic' => 
   array (
-    'purpose' => 'Select targets and preview combat, raid, covert, sabotage, and conquest operations.',
+    'purpose' => 'Target Selection operations',
     'workflow' => 
     array (
-      0 => 'load visible realms',
-      1 => 'verify protection',
-      2 => 'calculate operation cost',
-      3 => 'compare forces',
-      4 => 'submit chosen operation',
+      0 => 'load scoped state',
+      1 => 'validate authenticated intent',
+      2 => 'lock required records',
+      3 => 'resolve authoritative mechanic',
+      4 => 'write audit event',
+      5 => 'return feedback',
     ),
     'validation' => 
     array (
       0 => 'authenticated commander',
-      1 => 'attack turns',
-      2 => 'target ownership scope',
-      3 => 'protection rules',
-      4 => 'fleet or unit availability',
+      1 => 'CSRF token',
+      2 => 'RBAC policy',
+      3 => 'ownership scope',
+      4 => 'cooldown validation',
+      5 => 'transaction boundary',
     ),
     'calculations' => 
     array (
-      0 => 'validated force comparison + technology + defense + deterministic resolver',
-      1 => 'operation cost',
-      2 => 'loot preview',
+      0 => 'detection = defender counter-intelligence − attacker agents − covert technology',
     ),
     'mutations' => 
     array (
-      0 => 'battles',
-      1 => 'battle_rounds',
-      2 => 'battle_reports',
-      3 => 'attack_logs',
-      4 => 'player_resources',
+      0 => 'target_realms',
+      1 => 'players',
+      2 => 'player_resources',
+      3 => 'protection_states',
+      4 => 'battles',
+      5 => 'battle_reports',
+      6 => 'covert_missions',
+      7 => 'intelligence_reports',
+      8 => 'game_events',
     ),
   ),
   'features' => 
   array (
-    0 => 'known realm search',
-    1 => 'protection badges',
-    2 => 'combat preview',
-    3 => 'operation cost',
-    4 => 'attack',
-    5 => 'raid',
-    6 => 'spy',
-    7 => 'sabotage',
+    0 => 'target selection',
+    1 => 'fleet readiness',
+    2 => 'agent allocation',
+    3 => 'detection meter',
+    4 => 'battle outcome',
+    5 => 'classified reports',
+    6 => 'cooldown visibility',
+  ),
+  'sub_features' => 
+  array (
+    0 => 'loading and refresh state',
+    1 => 'permission-aware controls',
+    2 => 'related-page navigation',
+    3 => 'filter and sort state',
+    4 => 'empty-state explanation',
+    5 => 'audit and feedback detail',
   ),
   'design' => 
   array (
-    'template' => 'target-board',
+    'template' => 'specification-dashboard',
     'sections' => 
     array (
-      0 => 'filters',
-      1 => 'target rows',
-      2 => 'protection',
-      3 => 'combat preview',
-      4 => 'operation controls',
+      0 => 'overview',
+      1 => 'controls',
+      2 => 'features',
+      3 => 'system-design',
+      4 => 'information',
+      5 => 'feedback-states',
     ),
     'components' => 
     array (
-      0 => 'target-table',
-      1 => 'protection-badge',
-      2 => 'cost-preview',
-      3 => 'operation-buttons',
+      0 => 'metric-strip',
+      1 => 'operation-controls',
+      2 => 'status-badge',
+      3 => 'data-table',
+      4 => 'feedback-panel',
     ),
-    'responsive' => 'Target table becomes stacked target rows',
+    'responsive' => 'horizontal dashboard with stacked mobile layout',
   ),
   'systems' => 
   array (
     'services' => 
     array (
-      0 => 'CombatService',
-      1 => 'CovertService',
-      2 => 'TargetingService',
+      0 => 'PageService',
     ),
     'reads' => 
     array (
       0 => 'target_realms',
       1 => 'players',
-      2 => 'rankings',
+      2 => 'player_resources',
       3 => 'protection_states',
-      4 => 'technologies',
+      4 => 'battles',
+      5 => 'battle_reports',
+      6 => 'covert_missions',
+      7 => 'intelligence_reports',
+      8 => 'game_events',
     ),
     'writes' => 
     array (
-      0 => 'battles',
-      1 => 'battle_rounds',
-      2 => 'battle_reports',
-      3 => 'attack_logs',
-      4 => 'player_resources',
+      0 => 'target_realms',
+      1 => 'players',
+      2 => 'player_resources',
+      3 => 'protection_states',
+      4 => 'battles',
+      5 => 'battle_reports',
+      6 => 'covert_missions',
+      7 => 'intelligence_reports',
+      8 => 'game_events',
     ),
     'actions' => 
     array (
       0 => 'combat',
-      1 => 'combat:raid',
+      1 => 'covert:recon',
       2 => 'covert:spy',
       3 => 'covert:sabotage',
+      4 => 'refresh_page',
     ),
+    'permissions' => 
+    array (
+      0 => 'authenticated commander',
+      1 => 'CSRF',
+      2 => 'RBAC',
+      3 => 'ownership scope',
+      4 => 'cooldown validation',
+    ),
+  ),
+  'feedback_states' => 
+  array (
+    0 => 'loading',
+    1 => 'ready',
+    2 => 'empty',
+    3 => 'protected',
+    4 => 'cooldown',
+    5 => 'insufficient-resource',
+    6 => 'success',
+    7 => 'error',
   ),
   'contract_files' => 
   array (

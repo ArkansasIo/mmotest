@@ -1,49 +1,21 @@
 <?php
+declare(strict_types=1);
 return array (
-  'page_title' => 'Universe Planets',
-  0 => 'planet class',
-  1 => 'biome',
-  2 => 'habitability',
-  3 => 'resource modifiers',
-  4 => 'colony status',
-  5 => 'colonization',
-  'feature_matrix' =>
+  'title' => 'Universe Planets',
+  'features' => 
   array (
-    'core' =>
-    array (
-      0 => 'state snapshot',
-      1 => 'permission-aware rendering',
-      2 => 'feedback-state rendering',
-    ),
-    'controls' =>
-    array (
-      0 => 'Inspect planet',
-      1 => 'Colonize planet',
-    ),
-    'actions' =>
-    array (
-      0 => 'planet_details',
-      1 => 'colonize_planet',
-    ),
-    'data_sources' =>
-    array (
-      0 => 'universe_planets',
-      1 => 'player_colonies',
-    ),
+    0 => 'summary metrics',
+    1 => 'status badges',
+    2 => 'related-page navigation',
+    3 => 'empty-state guidance',
   ),
-  'sub_features' =>
+  'sub_features' => 
   array (
-    0 => 'load_page_state',
-    1 => 'validate_page_scope',
-    2 => 'calculate_page_metrics',
-    3 => 'render_page_result',
-  ),
-  'acceptance_criteria' =>
-  array (
-    0 => 'unauthorized input rejected',
-    1 => 'negative quantities rejected',
-    2 => 'empty state handled',
-    3 => 'success refreshes state',
-    4 => 'database mutation is transactional',
+    0 => 'loading and refresh state',
+    1 => 'permission-aware controls',
+    2 => 'related-page navigation',
+    3 => 'filter and sort state',
+    4 => 'empty-state explanation',
+    5 => 'audit and feedback detail',
   ),
 );

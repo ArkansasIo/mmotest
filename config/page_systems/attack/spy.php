@@ -1,29 +1,48 @@
 <?php
+declare(strict_types=1);
 return array (
   'services' => 
   array (
-    0 => 'CovertService',
-    1 => 'IntelligenceService',
+    0 => 'PageService',
   ),
   'reads' => 
   array (
-    0 => 'covert_agents',
-    1 => 'anti_covert_agents',
-    2 => 'target_realms',
-    3 => 'technologies',
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
   'writes' => 
   array (
-    0 => 'covert_missions',
-    1 => 'spy_missions',
-    2 => 'sabotage_missions',
-    3 => 'intelligence_reports',
-    4 => 'game_events',
+    0 => 'target_realms',
+    1 => 'players',
+    2 => 'player_resources',
+    3 => 'protection_states',
+    4 => 'battles',
+    5 => 'battle_reports',
+    6 => 'covert_missions',
+    7 => 'intelligence_reports',
+    8 => 'game_events',
   ),
   'actions' => 
   array (
-    0 => 'covert:recon',
-    1 => 'covert:spy',
-    2 => 'covert:sabotage',
+    0 => 'combat',
+    1 => 'covert:recon',
+    2 => 'covert:spy',
+    3 => 'covert:sabotage',
+    4 => 'refresh_page',
+  ),
+  'permissions' => 
+  array (
+    0 => 'authenticated commander',
+    1 => 'CSRF',
+    2 => 'RBAC',
+    3 => 'ownership scope',
+    4 => 'cooldown validation',
   ),
 );

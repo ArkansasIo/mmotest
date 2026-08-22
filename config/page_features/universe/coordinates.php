@@ -1,51 +1,21 @@
 <?php
+declare(strict_types=1);
 return array (
-  'page_title' => 'Coordinate Search',
-  0 => 'coordinate input',
-  1 => 'galaxy result',
-  2 => 'system result',
-  3 => 'planet result',
-  4 => 'moon result',
-  'feature_matrix' =>
+  'title' => 'Coordinate Search',
+  'features' => 
   array (
-    'core' =>
-    array (
-      0 => 'state snapshot',
-      1 => 'permission-aware rendering',
-      2 => 'feedback-state rendering',
-    ),
-    'controls' =>
-    array (
-      0 => 'Search coordinates',
-      1 => 'Open system',
-    ),
-    'actions' =>
-    array (
-      0 => 'coordinate_lookup',
-    ),
-    'data_sources' =>
-    array (
-      0 => 'universe_galaxies',
-      1 => 'universe_sectors',
-      2 => 'universe_solar_systems',
-      3 => 'universe_planets',
-      4 => 'universe_discoveries',
-      5 => 'player_colonies',
-    ),
+    0 => 'summary metrics',
+    1 => 'status badges',
+    2 => 'related-page navigation',
+    3 => 'empty-state guidance',
   ),
-  'sub_features' =>
+  'sub_features' => 
   array (
-    0 => 'parse_coordinate_tuple',
-    1 => 'validate_hierarchy',
-    2 => 'apply_discovery_filter',
-    3 => 'build_navigation_identifiers',
-  ),
-  'acceptance_criteria' =>
-  array (
-    0 => 'unauthorized input rejected',
-    1 => 'negative quantities rejected',
-    2 => 'empty state handled',
-    3 => 'success refreshes state',
-    4 => 'database mutation is transactional',
+    0 => 'loading and refresh state',
+    1 => 'permission-aware controls',
+    2 => 'related-page navigation',
+    3 => 'filter and sort state',
+    4 => 'empty-state explanation',
+    5 => 'audit and feedback detail',
   ),
 );
