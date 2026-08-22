@@ -1,6 +1,6 @@
 {
     "status": "passed",
-    "generated_at": "2026-08-22T18:22:43+00:00",
+    "generated_at": "2026-08-22T19:13:55+00:00",
     "tests": {
         "detailed_specs": {
             "status": "passed",
@@ -10,7 +10,7 @@
         "generated_routes": {
             "status": "passed",
             "exit_code": 0,
-            "output": "{\n    \"status\": \"passed\",\n    \"groups\": 28,\n    \"routes\": 191,\n    \"route_layers_checked\": 1528,\n    \"php_files_checked\": 1835,\n    \"syntax_errors\": 0,\n    \"missing_dependencies\": 0,\n    \"errors\": []\n}"
+            "output": "{\n    \"status\": \"passed\",\n    \"groups\": 28,\n    \"routes\": 191,\n    \"route_layers_checked\": 1528,\n    \"php_files_checked\": 1837,\n    \"syntax_errors\": 0,\n    \"missing_dependencies\": 0,\n    \"errors\": []\n}"
         },
         "ajax_routes": {
             "status": "passed",
@@ -35,7 +35,7 @@
         "route_stress": {
             "status": "passed",
             "exit_code": 0,
-            "output": "{\n    \"status\": \"passed\",\n    \"base_url\": \"http:\\/\\/127.0.0.1:8095\",\n    \"routes\": 191,\n    \"rounds\": 5,\n    \"concurrency_batch\": 24,\n    \"requests\": 1910,\n    \"successful_requests\": 1910,\n    \"failed_requests\": 0,\n    \"throughput_requests_per_second\": 2080.94,\n    \"latency_ms\": {\n        \"p50\": 10.52,\n        \"p95\": 15.37,\n        \"max\": 26.38\n    },\n    \"status_counts\": {\n        \"200\": 955,\n        \"302\": 955\n    },\n    \"sample_errors\": []\n}"
+            "output": "{\n    \"status\": \"passed\",\n    \"base_url\": \"http:\\/\\/127.0.0.1:8095\",\n    \"routes\": 191,\n    \"rounds\": 5,\n    \"concurrency_batch\": 24,\n    \"requests\": 1910,\n    \"successful_requests\": 1910,\n    \"failed_requests\": 0,\n    \"throughput_requests_per_second\": 2061.63,\n    \"latency_ms\": {\n        \"p50\": 11.02,\n        \"p95\": 13.92,\n        \"max\": 15.01\n    },\n    \"status_counts\": {\n        \"200\": 955,\n        \"302\": 955\n    },\n    \"sample_errors\": []\n}"
         }
     }
 }

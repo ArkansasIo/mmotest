@@ -63,7 +63,7 @@
   </div>
 
   <div class="main-layout">
-    <aside class="left-menu window-panel">
+    <aside class="left-menu window-panel" data-navigation-manifest="config/navigation/ogame_sidebar_manifest.php" data-navigation-style="ogame-left-sidebar">
       <div class="window-bar"><span class="window-lights"><i></i><i></i><i></i></span><strong>COMMAND MODULES</strong><span class="window-status">REGISTRY NAV</span></div>
       <h3>Master Navigation</h3>
 
