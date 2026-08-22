@@ -1,0 +1,20 @@
+{
+    "status": "passed",
+    "player_id": 1,
+    "colony_id": 1,
+    "queue_id": 42,
+    "build_seconds": 240,
+    "checks": {
+        "resource_lock_metal": true,
+        "resource_lock_crystal": true,
+        "resource_lock_deuterium": true,
+        "resource_lock_naquadah": true,
+        "resource_lock_energy": true,
+        "queue_status_building": true,
+        "completion_time_matches_result": true,
+        "completion_time_is_positive": true,
+        "early_processing_does_not_complete": true,
+        "due_processing_completes_queue": true,
+        "completed_building_persisted": true
+    }
+}

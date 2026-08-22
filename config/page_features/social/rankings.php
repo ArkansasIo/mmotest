@@ -4,18 +4,24 @@ return array (
   'title' => 'Rankings',
   'features' => 
   array (
-    0 => 'summary metrics',
-    1 => 'status badges',
-    2 => 'related-page navigation',
-    3 => 'empty-state guidance',
+    0 => 'commander ladder',
+    1 => 'summary metrics',
+    2 => 'military, economy, technology, glory, and penalty scores',
+    3 => 'season movement indicators',
+    4 => 'status badges',
+    5 => 'related-page navigation',
+    6 => 'empty-state guidance',
   ),
   'sub_features' => 
   array (
     0 => 'loading and refresh state',
     1 => 'permission-aware controls',
-    2 => 'related-page navigation',
-    3 => 'filter and sort state',
-    4 => 'empty-state explanation',
-    5 => 'audit and feedback detail',
+    2 => 'score-dimension filtering',
+    3 => 'deterministic score sorting',
+    4 => 'public commander profile preview',
+    5 => 'season movement comparison',
+    6 => 'related-page navigation',
+    7 => 'empty-state explanation',
+    8 => 'audit and feedback detail',
   ),
 );

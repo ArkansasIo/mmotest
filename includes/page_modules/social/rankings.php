@@ -9,11 +9,22 @@ function stargatewars_social_rankings_actions(): array { return stargatewars_soc
 function stargatewars_social_rankings_validate_intent(array $input): array {
     $errors = [];
     $action = (string)($input['action'] ?? '');
-    if ($action === '' || !in_array($action, stargatewars_social_rankings_actions(), true)) { $errors['action'] = 'Action is not permitted for this page.'; }
-    if (in_array($action, ['combat','combat:raid','covert:recon','covert:spy','covert:sabotage'], true) && (int)($input['target_id'] ?? 0) <= 0) { $errors['target_id'] = 'A valid target is required.'; }
-    if (in_array($action, ['deposit','withdraw','train','upgrade_up','technology','weapon_buy','weapon_repair'], true) && (int)($input['amount'] ?? $input['quantity'] ?? 0) < 0) { $errors['amount'] = 'The requested amount must not be negative.'; }
-    return ['valid' => $errors === [], 'errors' => $errors, 'action' => $action];
+    $allowedActions = stargatewars_social_rankings_actions();
+    if ($action === '' || !in_array($action, $allowedActions, true)) { $errors['action'] = 'Action is not permitted for this page.'; }
+    $allowedFilters = ['overall','military','economy','technology','glory','penalties'];
+    $filter = (string)($input['filter'] ?? 'overall');
+    if (!in_array($filter, $allowedFilters, true)) { $errors['filter'] = 'Ranking filter is not permitted.'; }
+    $allowedSorts = ['rank','score','military','economy','technology','glory'];
+    $sort = (string)($input['sort'] ?? 'rank');
+    if (!in_array($sort, $allowedSorts, true)) { $errors['sort'] = 'Ranking sort is not permitted.'; }
+    $limit = (int)($input['limit'] ?? 50);
+    if ($limit < 1 || $limit > 200) { $errors['limit'] = 'Ranking limit must be between 1 and 200.'; }
+    if ($action === 'open_player' && (int)($input['target_id'] ?? 0) <= 0) { $errors['target_id'] = 'A valid public commander is required.'; }
+    return ['valid' => $errors === [], 'errors' => $errors, 'action' => $action, 'filter' => $filter, 'sort' => $sort, 'limit' => $limit];
 }
 function stargatewars_social_rankings_preview(array $context = []): array {
-    return ['route' => 'rankings', 'title' => 'Rankings', 'logic' => stargatewars_social_rankings_logic(), 'features' => stargatewars_social_rankings_features(), 'design' => stargatewars_social_rankings_design(), 'systems' => stargatewars_social_rankings_systems(), 'context' => $context];
+    $state = (string)($context['state'] ?? 'ready');
+    $allowedStates = ['loading','ready','empty','protected','cooldown','insufficient-resource','success','error'];
+    if (!in_array($state, $allowedStates, true)) { $state = 'error'; }
+    return ['route' => 'rankings', 'title' => 'Rankings', 'mechanic' => 'ranking score = economy + military + technology + glory − penalties', 'logic' => stargatewars_social_rankings_logic(), 'features' => stargatewars_social_rankings_features(), 'design' => stargatewars_social_rankings_design(), 'systems' => stargatewars_social_rankings_systems(), 'feedback_state' => $state, 'context' => $context];
 }
